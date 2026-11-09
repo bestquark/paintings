@@ -1,0 +1,37 @@
+#paintings-background { position:fixed; inset:0; background:#10100f center / contain no-repeat; pointer-events:none; z-index:0; }
+#paintings-controls { position:fixed; z-index:45; left:12px; bottom:8px; display:flex; align-items:center; gap:6px; max-width:calc(100vw - 24px); padding:5px 7px; border:1px solid #ffffff20; border-radius:8px; color:#eee; background:#151513e8; font:11px/1.4 system-ui,sans-serif; box-shadow:0 2px 12px #0003; }
+#paintings-controls select, #paintings-controls button { flex:none; color:inherit; background:#ffffff09; font:inherit; border:1px solid #ffffff15; border-radius:4px; padding:4px 6px; cursor:pointer; }
+#paintings-controls select { max-width:125px; }
+#paintings-controls option { color:#eee; background:#171716; }
+#paintings-controls a { color:#d9d1bb; text-decoration:none; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:360px; padding:4px; }
+#paintings-controls a:hover { text-decoration:underline; }
+#paintings-controls :focus-visible { outline:2px solid #cbbd90; outline-offset:2px; }
+#paintings-controls.is-hidden > :not(:nth-child(4)) { display:none; }
+.paintings-gallery body { margin:0; background:#10100f; }
+/* Keep theme colors and raised surfaces; only the main canvas becomes clear. */
+.paintings-openchamber:not(.paintings-hidden) body { background:#141412 !important; }
+.paintings-openchamber.light:not(.paintings-hidden) body { background:#fdfcfa !important; }
+.paintings-openchamber:not(.paintings-hidden) #root, .paintings-openchamber:not(.paintings-hidden) #root .bg-background { background-color:transparent !important; }
+.paintings-openchamber:not(.paintings-hidden) [role="dialog"], .paintings-openchamber:not(.paintings-hidden) [role="menu"], .paintings-openchamber:not(.paintings-hidden) [data-radix-popper-content-wrapper], .paintings-openchamber:not(.paintings-hidden) [role="dialog"] .bg-background, .paintings-openchamber:not(.paintings-hidden) [role="menu"] .bg-background { background-color:var(--surface-background,#191919) !important; }
+@media (max-width:600px) { #paintings-controls { left:6px; bottom:5px; gap:3px; max-width:calc(100vw - 12px); } #paintings-controls a { max-width:80px; } #paintings-controls select { max-width:105px; } }
+@media (prefers-reduced-motion:no-preference) { #paintings-background { transition:opacity .3s; } }
+
+#paintings-menu { position:fixed; z-index:45; right:64px; bottom:8px; color:#eee; font:12px/1.4 system-ui,sans-serif; }
+#paintings-menu.with-toolbar { top:8px; bottom:auto; right:62px; }
+#paintings-menu > summary { cursor:pointer; list-style:none; border:1px solid #8884; border-radius:7px; padding:6px 10px; background:#171714dd; }
+#paintings-menu > summary::-webkit-details-marker { display:none; }
+#paintings-menu #paintings-controls { position:absolute; left:auto; right:0; bottom:38px; max-width:calc(100vw - 80px); width:max-content; flex-wrap:wrap; }
+#paintings-menu.with-toolbar #paintings-controls { top:40px; bottom:auto; }
+#paintings-menu #paintings-controls a { flex-basis:100%; max-width:350px; }
+#paintings-menu:not([open]) #paintings-controls { display:none; }
+@media(max-width:600px) { #paintings-menu #paintings-controls { width:270px; max-width:calc(100vw - 80px); } }
+.paintings-openchamber #paintings-menu { top:8px; bottom:auto; right:62px; }
+.paintings-openchamber #paintings-menu #paintings-controls { top:40px; bottom:auto; }
+/* The embedded terminal paints its own canvas. Blend the theme background away
+   while preserving its text; no terminal session or renderer API is touched. */
+.paintings-openchamber:not(.paintings-hidden) #root div:has(.oc-terminal-canvas) { background-color:transparent !important; }
+.paintings-openchamber.dark:not(.paintings-hidden) .oc-terminal-canvas { mix-blend-mode:screen; }
+.paintings-openchamber.light:not(.paintings-hidden) .oc-terminal-canvas { mix-blend-mode:multiply; }
+
+.paintings-openchamber:not(.paintings-hidden) .terminal-viewport-container::before { content:""; position:absolute; inset:0; pointer-events:none; background:var(--painting-image) center/var(--painting-fit,contain) no-repeat; opacity:var(--painting-opacity,.16); }
+.paintings-openchamber:not(.paintings-hidden) .oc-terminal-canvas { position:relative; }

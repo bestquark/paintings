@@ -1,0 +1,44 @@
+{
+  "version": "0.1.0",
+  "reviewed_at": "2026-11-09",
+  "stream_count": 7,
+  "artwork_policy": "Existing artwork only; no generated imagery",
+  "streams": {
+    "renaissance": {
+      "entries": 200,
+      "sha256": "6fa7b717cbc5c1d69bf728ccc6f4f21cf8c16ab5c41fbaaa2b1002d755afaff7"
+    },
+    "baroque": {
+      "entries": 200,
+      "sha256": "a21f06e78b42288f68e2dc1e8664cf75cdca74143ff9d1f48dc3bbd02302aa44"
+    },
+    "romanticism": {
+      "entries": 200,
+      "sha256": "2c306b9aae9b5e9469f89adbf12dd6c5f9266a9c46cca620bc720a333db3ffd2"
+    },
+    "impressionism": {
+      "entries": 200,
+      "sha256": "7737cfbb21204ad917d2fd8d012353504db7ce83b2d1e10018f94dc6c9a96521"
+    },
+    "abstraction": {
+      "entries": 200,
+      "sha256": "1bcf50f5750774e896d7400d2433a5503e5c158a997faabd4bde797693c8a2d4"
+    },
+    "visionary": {
+      "entries": 200,
+      "sha256": "b3fc8611cd2425e5efc5177cc9d1c22bb2a88c475448574d1009b5342afde0a1"
+    },
+    "landscapes": {
+      "entries": 200,
+      "sha256": "ccb85ccbb0575dd4113dfdea82d1df6d45dd65220348be14630ec993e9b2ee56"
+    }
+  },
+  "total_entries": 1400,
+  "distinct_artwork_ids": 1227,
+  "license_entries": {
+    "Public domain": 1278,
+    "CC0": 41,
+    "NASA media guidelines": 31,
+    "CC BY 4.0": 50
+  }
+}
