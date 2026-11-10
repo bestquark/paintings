@@ -1,0 +1,98 @@
+{
+  "classical": [
+    "commons-183030",
+    "commons-22149624",
+    "commons-87661354",
+    "commons-86479139",
+    "commons-41045140",
+    "commons-21880636",
+    "commons-21908858",
+    "commons-148029363",
+    "commons-1387333",
+    "commons-48196303"
+  ],
+  "landscapes": [
+    "commons-183030",
+    "commons-22189570",
+    "commons-74492483",
+    "commons-151661",
+    "commons-29697337",
+    "commons-21865987",
+    "commons-13359186",
+    "commons-21914139",
+    "commons-21914112",
+    "commons-15393901"
+  ],
+  "renaissance": [
+    "commons-22507491",
+    "commons-21996715",
+    "commons-22554501",
+    "commons-104297124",
+    "commons-21897794",
+    "commons-13358804",
+    "commons-22003258",
+    "commons-21979801",
+    "commons-22003765",
+    "commons-22127049"
+  ],
+  "baroque": [
+    "commons-22174501",
+    "commons-13410926",
+    "commons-13353716",
+    "commons-22003449",
+    "commons-13353696",
+    "commons-186525269",
+    "commons-21864326",
+    "commons-21865987",
+    "commons-13359186",
+    "commons-21997321"
+  ],
+  "romanticism": [
+    "commons-183045",
+    "commons-21914139",
+    "commons-21914112",
+    "commons-127245432",
+    "commons-21996910",
+    "commons-21854187",
+    "commons-22153410",
+    "commons-147987667",
+    "commons-142375786",
+    "commons-134506946"
+  ],
+  "impressionism": [
+    "commons-23750619",
+    "commons-25498286",
+    "commons-11500785",
+    "commons-21909139",
+    "commons-22141289",
+    "commons-21987766",
+    "commons-8823818",
+    "commons-182805794",
+    "commons-23598069",
+    "commons-21880441"
+  ],
+  "abstraction": [
+    "commons-178839132",
+    "commons-163940178",
+    "commons-31011870",
+    "commons-60907401",
+    "commons-13488190",
+    "commons-22950618",
+    "commons-29848131",
+    "commons-92463021",
+    "commons-19069726",
+    "commons-152030690"
+  ],
+  "visionary": [
+    "nasa-AC76-0628",
+    "nasa-ARC-1975-AC75-2621",
+    "revoy-1a792c10caa6f372",
+    "revoy-013bfbef151c8627",
+    "revoy-cff1141b183bbc00",
+    "commons-20668043",
+    "commons-45153051",
+    "commons-22605738",
+    "commons-1690675",
+    "commons-22633150"
+  ]
+}

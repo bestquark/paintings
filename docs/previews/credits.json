@@ -1,0 +1,898 @@
+{
+  "abstraction": [
+    {
+      "artist": "Wassily Kandinsky",
+      "credit": "Wassily Kandinsky",
+      "date": "1913",
+      "id": "commons-178839132",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Composition_VII_-_Wassily_Kandinsky%2C_GAC.jpg/3840px-Composition_VII_-_Wassily_Kandinsky%2C_GAC.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Composition_VII_-_Wassily_Kandinsky,_GAC.jpg",
+      "title": "Composition VII"
+    },
+    {
+      "artist": "Piet Mondrian",
+      "credit": "Piet Mondrian",
+      "date": "1927",
+      "id": "commons-163940178",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Compositie_met_rood%2C_geel_en_blauw.jpg/3840px-Compositie_met_rood%2C_geel_en_blauw.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Compositie_met_rood,_geel_en_blauw.jpg",
+      "title": "Compositie met rood, geel en blauw"
+    },
+    {
+      "artist": "Kazimir Malevich",
+      "credit": "Kazimir Malevich",
+      "date": "1915",
+      "id": "commons-31011870",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Kazimir_Malevich%2C_1915%2C_Black_Suprematic_Square%2C_oil_on_linen_canvas%2C_79.5_x_79.5_cm%2C_Tretyakov_Gallery%2C_Moscow.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kazimir_Malevich,_1915,_Black_Suprematic_Square,_oil_on_linen_canvas,_79.5_x_79.5_cm,_Tretyakov_Gallery,_Moscow.jpg",
+      "title": "Black Square (Black Suprematic Square)"
+    },
+    {
+      "artist": "Paul Klee",
+      "credit": "Paul Klee",
+      "date": "1922",
+      "id": "commons-60907401",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Mural_from_the_Temple_of_Longing_Thither%2C_1922_-_Paul_Klee%2C_MET_DP-823-001.jpg/3840px-Mural_from_the_Temple_of_Longing_Thither%2C_1922_-_Paul_Klee%2C_MET_DP-823-001.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mural_from_the_Temple_of_Longing_Thither,_1922_-_Paul_Klee,_MET_DP-823-001.jpg",
+      "title": "Mural from the Temple of Longing ↖Thither↗"
+    },
+    {
+      "artist": "Juan Gris",
+      "credit": "Juan Gris",
+      "date": "1925",
+      "id": "commons-13488190",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Juan_Gris_-_La_guitare_devant_la_mer_-_Google_Art_Project.jpg/3840px-Juan_Gris_-_La_guitare_devant_la_mer_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Juan_Gris_-_La_guitare_devant_la_mer_-_Google_Art_Project.jpg",
+      "title": "Guitar in Front of the Sea"
+    },
+    {
+      "artist": "Robert Delaunay",
+      "credit": "Robert Delaunay",
+      "date": "1930",
+      "id": "commons-22950618",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Robert_Delaunay_-_Rythme%2C_Joie_de_vivre.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Robert_Delaunay_-_Rythme,_Joie_de_vivre.jpg",
+      "title": "Rythme, Joie de vivre"
+    },
+    {
+      "artist": "Franz Marc",
+      "credit": "Franz Marc",
+      "date": "1911",
+      "id": "commons-29848131",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Marc%2C_Franz_-_Blue_Horse_I_-_Google_Art_Project.jpg/3840px-Marc%2C_Franz_-_Blue_Horse_I_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Marc,_Franz_-_Blue_Horse_I_-_Google_Art_Project.jpg",
+      "title": "Blaues Pferd I"
+    },
+    {
+      "artist": "Lyubov Popova",
+      "credit": "Lyubov Popova",
+      "date": "1916",
+      "id": "commons-92463021",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Painterly_Architectonic_-_Lyubov_Popova.jpg/3840px-Painterly_Architectonic_-_Lyubov_Popova.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Painterly_Architectonic_-_Lyubov_Popova.jpg",
+      "title": "Painterly Architectonic - Lyubov Popova"
+    },
+    {
+      "artist": "Olga Rozanova",
+      "credit": "Olga Rozanova",
+      "date": "1916",
+      "id": "commons-19069726",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Suprematism_%28Rozanova%2C_1916%29.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Suprematism_(Rozanova,_1916).jpg",
+      "title": "Suprematism"
+    },
+    {
+      "artist": "Alexandra Exter",
+      "credit": "Aleksandra Ekster",
+      "date": "1917",
+      "id": "commons-152030690",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Non-Objective_Composition_%28Alexandra_Exter%2C_1917%29.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Non-Objective_Composition_(Alexandra_Exter,_1917).jpg",
+      "title": "Non-Objective Composition (Alexandra Exter, 1917)"
+    }
+  ],
+  "baroque": [
+    {
+      "artist": "Peter Paul Rubens",
+      "credit": "Peter Paul Rubens",
+      "date": "1614",
+      "id": "commons-22174501",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Sir_Peter_Paul_Rubens_-_Daniel_in_the_Lions%27_Den_-_Google_Art_Project.jpg/3840px-Sir_Peter_Paul_Rubens_-_Daniel_in_the_Lions%27_Den_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sir_Peter_Paul_Rubens_-_Daniel_in_the_Lions%27_Den_-_Google_Art_Project.jpg",
+      "title": "Daniel in the Lions' Den"
+    },
+    {
+      "artist": "Rembrandt",
+      "credit": "Rembrandt",
+      "date": "1665",
+      "id": "commons-13410926",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Rembrandt_Harmensz._van_Rijn_-_Portret_van_een_paar_als_oudtestamentische_figuren%2C_genaamd_%27Het_Joodse_bruidje%27_-_Google_Art_Project.jpg/3840px-Rembrandt_Harmensz._van_Rijn_-_Portret_van_een_paar_als_oudtestamentische_figuren%2C_genaamd_%27Het_Joodse_bruidje%27_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Portret_van_een_paar_als_oudtestamentische_figuren,_genaamd_%27Het_Joodse_bruidje%27_-_Google_Art_Project.jpg",
+      "title": "Portrait of a couple as figures from the Old Testament, known as ‘The Jewish bride’"
+    },
+    {
+      "artist": "Johannes Vermeer",
+      "credit": "Johannes Vermeer",
+      "date": "1658",
+      "id": "commons-13353716",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Jan_Vermeer_van_Delft_-_The_Glass_of_Wine_-_Google_Art_Project.jpg/3840px-Jan_Vermeer_van_Delft_-_The_Glass_of_Wine_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Vermeer_van_Delft_-_The_Glass_of_Wine_-_Google_Art_Project.jpg",
+      "title": "The Wine Glass"
+    },
+    {
+      "artist": "Caravaggio",
+      "credit": "Caravaggio",
+      "date": "1602",
+      "id": "commons-22003449",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Michelangelo_Merisi%2C_called_Caravaggio_-_The_Crowning_with_Thorns_-_Google_Art_Project.jpg/3840px-Michelangelo_Merisi%2C_called_Caravaggio_-_The_Crowning_with_Thorns_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Michelangelo_Merisi,_called_Caravaggio_-_The_Crowning_with_Thorns_-_Google_Art_Project.jpg",
+      "title": "Christ Crowned with Thorns"
+    },
+    {
+      "artist": "Diego Velázquez",
+      "credit": "Diego Velázquez",
+      "date": "1618",
+      "id": "commons-13353696",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Diego_Vel%C3%A1zquez_-_The_Three_Musicians_-_Google_Art_Project.jpg/3840px-Diego_Vel%C3%A1zquez_-_The_Three_Musicians_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_The_Three_Musicians_-_Google_Art_Project.jpg",
+      "title": "Three Musicians"
+    },
+    {
+      "artist": "Artemisia Gentileschi",
+      "credit": "Artemisia Gentileschi",
+      "date": "1625",
+      "id": "commons-186525269",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Gentileschi_-_Venus_and_Cupid_%28c._1625-30_VMFA%29.jpg/3840px-Gentileschi_-_Venus_and_Cupid_%28c._1625-30_VMFA%29.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gentileschi_-_Venus_and_Cupid_(c._1625-30_VMFA).jpg",
+      "title": "Venus and Cupid (Sleeping Venus)"
+    },
+    {
+      "artist": "Nicolas Poussin",
+      "credit": "Nicolas Poussin",
+      "date": "1635",
+      "id": "commons-21864326",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Nicolas_Poussin%2C_French_-_The_Birth_of_Venus_-_Google_Art_Project.jpg/3840px-Nicolas_Poussin%2C_French_-_The_Birth_of_Venus_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Poussin,_French_-_The_Birth_of_Venus_-_Google_Art_Project.jpg",
+      "title": "The Birth of Venus"
+    },
+    {
+      "artist": "Claude Lorrain",
+      "credit": "Claude Lorrain",
+      "date": "1652",
+      "id": "commons-21865987",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Claude_Lorrain_%28Claude_Gell%C3%A9e%29_-_Landscape_with_Apollo_and_the_Muses_-_Google_Art_Project.jpg/3840px-Claude_Lorrain_%28Claude_Gell%C3%A9e%29_-_Landscape_with_Apollo_and_the_Muses_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Claude_Lorrain_(Claude_Gell%C3%A9e)_-_Landscape_with_Apollo_and_the_Muses_-_Google_Art_Project.jpg",
+      "title": "Landscape with Apollo and the Muses"
+    },
+    {
+      "artist": "Jacob van Ruisdael",
+      "credit": "Jacob van Ruisdael",
+      "date": "1647",
+      "id": "commons-13359186",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Jacob_Isaacksz._van_Ruisdael_-_View_of_Naarden_-_Google_Art_Project.jpg/3840px-Jacob_Isaacksz._van_Ruisdael_-_View_of_Naarden_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Isaacksz._van_Ruisdael_-_View_of_Naarden_-_Google_Art_Project.jpg",
+      "title": "Vista de Naarden"
+    },
+    {
+      "artist": "Giovanni Battista Tiepolo",
+      "credit": "Giovanni Battista Tiepolo",
+      "date": "1743",
+      "id": "commons-21997321",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Giambattista_Tiepolo_-_The_Banquet_of_Cleopatra_-_Google_Art_Project.jpg/3840px-Giambattista_Tiepolo_-_The_Banquet_of_Cleopatra_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giambattista_Tiepolo_-_The_Banquet_of_Cleopatra_-_Google_Art_Project.jpg",
+      "title": "The Banquet of Cleopatra"
+    }
+  ],
+  "classical": [
+    {
+      "artist": "Thomas Cole",
+      "credit": "Thomas Cole",
+      "date": "1836",
+      "id": "commons-183030",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg/3840px-Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg",
+      "title": "The Course of Empire: The Consummation of Empire"
+    },
+    {
+      "artist": "Claude Lorrain",
+      "credit": "Manner of Claude Lorrain",
+      "date": "",
+      "id": "commons-22149624",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Claude_-_Classical_Seaport_at_Sunset_-_Google_Art_Project.jpg/3840px-Claude_-_Classical_Seaport_at_Sunset_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Claude_-_Classical_Seaport_at_Sunset_-_Google_Art_Project.jpg",
+      "title": "Classical Seaport at Sunset"
+    },
+    {
+      "artist": "Giovanni Ghisolfi",
+      "credit": "Giovanni Ghisolfi",
+      "date": "1650",
+      "id": "commons-87661354",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/A_Ruined_Classical_Temple_of_the_Tuscan_Order_with_Figures_by_Giovanni_Ghisolfi.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_Ruined_Classical_Temple_of_the_Tuscan_Order_with_Figures_by_Giovanni_Ghisolfi.jpg",
+      "title": "A Ruined Classical Temple of the Tuscan Order with Figures by Giovanni Ghisolfi"
+    },
+    {
+      "artist": "Gennaro Greco",
+      "credit": "Gennaro Greco",
+      "date": "1683",
+      "id": "commons-86479139",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Gennaro_Greco_-_Capriccio_of_ancient_ruins_at_a_Mediterranean_port_with_boats_and_bystanders.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gennaro_Greco_-_Capriccio_of_ancient_ruins_at_a_Mediterranean_port_with_boats_and_bystanders.jpg",
+      "title": "Capriccio of ancient ruins at a Mediterranean port with boats and bystanders"
+    },
+    {
+      "artist": "Jan Brueghel the Elder",
+      "credit": "Jan Brueghel the Elder",
+      "date": "1596",
+      "id": "commons-41045140",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Harbor_Scene_with_St._Paul%27s_Departure_from_Caesarea_-_Jan_Brueghel_the_Elder_-_Google_Cultural_Institute.jpg/3840px-Harbor_Scene_with_St._Paul%27s_Departure_from_Caesarea_-_Jan_Brueghel_the_Elder_-_Google_Cultural_Institute.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Harbor_Scene_with_St._Paul%27s_Departure_from_Caesarea_-_Jan_Brueghel_the_Elder_-_Google_Cultural_Institute.jpg",
+      "title": "Harbor Scene with St. Paul’s Departure from Caesarea"
+    },
+    {
+      "artist": "Giovanni Paolo Panini",
+      "credit": "Giovanni Pauolo Panini (1691 - 1765) (Italian) Details on Google Art Project",
+      "date": "1737",
+      "id": "commons-21880636",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Giovanni_Pauolo_Panini_-_Fantasy_View_with_the_Pantheon_and_other_Monuments_of_Ancient_Rome_-_Google_Art_Project.jpg/3840px-Giovanni_Pauolo_Panini_-_Fantasy_View_with_the_Pantheon_and_other_Monuments_of_Ancient_Rome_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Pauolo_Panini_-_Fantasy_View_with_the_Pantheon_and_other_Monuments_of_Ancient_Rome_-_Google_Art_Project.jpg",
+      "title": "Fantasy View with the Pantheon and other Monuments of Ancient Rome"
+    },
+    {
+      "artist": "Hubert Robert",
+      "credit": "Hubert Robert",
+      "date": "",
+      "id": "commons-21908858",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Hubert_Robert_-_Washerwomen_in_the_Ruins_of_the_Colosseum_-_Google_Art_Project.jpg/3840px-Hubert_Robert_-_Washerwomen_in_the_Ruins_of_the_Colosseum_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hubert_Robert_-_Washerwomen_in_the_Ruins_of_the_Colosseum_-_Google_Art_Project.jpg",
+      "title": "Washerwomen in the Ruins of the Colosseum"
+    },
+    {
+      "artist": "Pierre-Henri de Valenciennes",
+      "credit": "Pierre-Henri de Valenciennes",
+      "date": "1782",
+      "id": "commons-148029363",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Pierre_Henri_de_Valenciennes_%28French%2C_1750%E2%80%931819%29_-_View_of_Rome_-_1970.55_-_Cleveland_Museum_of_Art.jpg/3840px-Pierre_Henri_de_Valenciennes_%28French%2C_1750%E2%80%931819%29_-_View_of_Rome_-_1970.55_-_Cleveland_Museum_of_Art.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pierre_Henri_de_Valenciennes_(French,_1750%E2%80%931819)_-_View_of_Rome_-_1970.55_-_Cleveland_Museum_of_Art.jpg",
+      "title": "View of Rome"
+    },
+    {
+      "artist": "Leo von Klenze",
+      "credit": "Leo von Klenze",
+      "date": "1846",
+      "id": "commons-1387333",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Akropolis_by_Leo_von_Klenze.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Akropolis_by_Leo_von_Klenze.jpg",
+      "title": "The Acropolis at Athens"
+    },
+    {
+      "artist": "Alessandro Salucci",
+      "credit": "Jan Miel / Alessandro Salucci",
+      "date": "1650",
+      "id": "commons-48196303",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Jan_Miel_and_Alessandro_Salucci_-_Harbour.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Miel_and_Alessandro_Salucci_-_Harbour.jpg",
+      "title": "Harbour"
+    }
+  ],
+  "impressionism": [
+    {
+      "artist": "Claude Monet",
+      "credit": "Claude Monet",
+      "date": "1872",
+      "id": "commons-23750619",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/3840px-Monet_-_Impression%2C_Sunrise.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg",
+      "title": "Impression, Sunrise"
+    },
+    {
+      "artist": "Vincent van Gogh",
+      "credit": "Vincent van Gogh",
+      "date": "1889",
+      "id": "commons-25498286",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/3840px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+      "title": "The Starry Night"
+    },
+    {
+      "artist": "Georges Seurat",
+      "credit": "Georges Seurat",
+      "date": "1884",
+      "id": "commons-11500785",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/3840px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg",
+      "title": "A Sunday on La Grande Jatte"
+    },
+    {
+      "artist": "Gustave Caillebotte",
+      "credit": "Gustave Caillebotte",
+      "date": "1877",
+      "id": "commons-21909139",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Gustave_Caillebotte_-_Paris_Street%3B_Rainy_Day_-_Google_Art_Project.jpg/3840px-Gustave_Caillebotte_-_Paris_Street%3B_Rainy_Day_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gustave_Caillebotte_-_Paris_Street;_Rainy_Day_-_Google_Art_Project.jpg",
+      "title": "Paris Street in Rainy Weather"
+    },
+    {
+      "artist": "Mary Cassatt",
+      "credit": "Mary Cassatt",
+      "date": "1878",
+      "id": "commons-22141289",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Mary_Stevenson_Cassatt_-_In_the_Loge_-_Google_Art_Project.jpg/3840px-Mary_Stevenson_Cassatt_-_In_the_Loge_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mary_Stevenson_Cassatt_-_In_the_Loge_-_Google_Art_Project.jpg",
+      "title": "In the Loge"
+    },
+    {
+      "artist": "Camille Pissarro",
+      "credit": "Camille Pissarro",
+      "date": "1873",
+      "id": "commons-21987766",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Camille_Pissarro_-_The_Factory_at_Pontoise_-_Google_Art_Project.jpg/3840px-Camille_Pissarro_-_The_Factory_at_Pontoise_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_The_Factory_at_Pontoise_-_Google_Art_Project.jpg",
+      "title": "The Factory at Pontoise"
+    },
+    {
+      "artist": "Alfred Sisley",
+      "credit": "Alfred Sisley",
+      "date": "1874",
+      "id": "commons-8823818",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Alfred_Sisley_The_Road_to_Hampton_Court_1874_Neue_Pinakothek_Munich_M%C3%BCnchen.JPG/3840px-Alfred_Sisley_The_Road_to_Hampton_Court_1874_Neue_Pinakothek_Munich_M%C3%BCnchen.JPG",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alfred_Sisley_The_Road_to_Hampton_Court_1874_Neue_Pinakothek_Munich_M%C3%BCnchen.JPG",
+      "title": "The Road to Hampton Court"
+    },
+    {
+      "artist": "Pierre-Auguste Renoir",
+      "credit": "Pierre-Auguste Renoir",
+      "date": "1876",
+      "id": "commons-182805794",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/3840px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Renoir,_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette,_1876.jpg",
+      "title": "Bal du moulin de la Galette"
+    },
+    {
+      "artist": "Berthe Morisot",
+      "credit": "Berthe Morisot",
+      "date": "1894",
+      "id": "commons-23598069",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Berthe_Morisot_-Deux_femmes_%C3%A0_leur_toilette.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Berthe_Morisot_-Deux_femmes_%C3%A0_leur_toilette.jpg",
+      "title": "Jeunes femmes à leur toilette (titre donné par l'artiste)"
+    },
+    {
+      "artist": "Edgar Degas",
+      "credit": "Edgar Degas",
+      "date": "1874",
+      "id": "commons-21880441",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Edgar_Degas_-_Ballet_Rehearsal_on_Stage_-_Google_Art_Project.jpg/3840px-Edgar_Degas_-_Ballet_Rehearsal_on_Stage_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_Ballet_Rehearsal_on_Stage_-_Google_Art_Project.jpg",
+      "title": "Répétition d'un ballet sur la scène"
+    }
+  ],
+  "landscapes": [
+    {
+      "artist": "Thomas Cole",
+      "credit": "Thomas Cole",
+      "date": "1836",
+      "id": "commons-183030",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg/3840px-Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg",
+      "title": "The Course of Empire: The Consummation of Empire"
+    },
+    {
+      "artist": "Pieter Bruegel the Elder",
+      "credit": "Pieter Brueghel the Elder",
+      "date": "1565",
+      "id": "commons-22189570",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg/3840px-Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg",
+      "title": "monthly cycle, scene: The Hunters in the Snow (winter)"
+    },
+    {
+      "artist": "Joachim Patinir",
+      "credit": "Joachim Patinir",
+      "date": "1550",
+      "id": "commons-74492483",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Joachim_Patinier_-_Landscape_with_Saint_John_the_Baptist_Preaching_%28Mus%C3%A9es_Royaux_des_Beaux-Arts%2C_Brussels%29.jpg/3840px-Joachim_Patinier_-_Landscape_with_Saint_John_the_Baptist_Preaching_%28Mus%C3%A9es_Royaux_des_Beaux-Arts%2C_Brussels%29.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Joachim_Patinier_-_Landscape_with_Saint_John_the_Baptist_Preaching_(Mus%C3%A9es_Royaux_des_Beaux-Arts,_Brussels).jpg",
+      "title": "Landscape with St John the Baptist Preaching"
+    },
+    {
+      "artist": "Giorgione",
+      "credit": "Giorgione",
+      "date": "1505",
+      "id": "commons-151661",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Giorgione_042.jpg/3840px-Giorgione_042.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giorgione_042.jpg",
+      "title": "Landschaft mit Sonnenuntergang"
+    },
+    {
+      "artist": "Herri met de Bles",
+      "credit": "Herri met de Bles",
+      "date": "1535",
+      "id": "commons-29697337",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Herri_met_de_Bles_-_Landscape_with_the_Offering_of_Isaac_-_Google_Art_Project.jpg/3840px-Herri_met_de_Bles_-_Landscape_with_the_Offering_of_Isaac_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Herri_met_de_Bles_-_Landscape_with_the_Offering_of_Isaac_-_Google_Art_Project.jpg",
+      "title": "Landscape with the Offering of Isaac"
+    },
+    {
+      "artist": "Claude Lorrain",
+      "credit": "Claude Lorrain",
+      "date": "1652",
+      "id": "commons-21865987",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Claude_Lorrain_%28Claude_Gell%C3%A9e%29_-_Landscape_with_Apollo_and_the_Muses_-_Google_Art_Project.jpg/3840px-Claude_Lorrain_%28Claude_Gell%C3%A9e%29_-_Landscape_with_Apollo_and_the_Muses_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Claude_Lorrain_(Claude_Gell%C3%A9e)_-_Landscape_with_Apollo_and_the_Muses_-_Google_Art_Project.jpg",
+      "title": "Landscape with Apollo and the Muses"
+    },
+    {
+      "artist": "Jacob van Ruisdael",
+      "credit": "Jacob van Ruisdael",
+      "date": "1647",
+      "id": "commons-13359186",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Jacob_Isaacksz._van_Ruisdael_-_View_of_Naarden_-_Google_Art_Project.jpg/3840px-Jacob_Isaacksz._van_Ruisdael_-_View_of_Naarden_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Isaacksz._van_Ruisdael_-_View_of_Naarden_-_Google_Art_Project.jpg",
+      "title": "Vista de Naarden"
+    },
+    {
+      "artist": "Frederic Edwin Church",
+      "credit": "Frederic Edwin Church",
+      "date": "1873",
+      "id": "commons-21914139",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Frederic_Edwin_Church_-_Tropical_Scenery_-_Google_Art_Project.jpg/3840px-Frederic_Edwin_Church_-_Tropical_Scenery_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frederic_Edwin_Church_-_Tropical_Scenery_-_Google_Art_Project.jpg",
+      "title": "Tropical Scenery"
+    },
+    {
+      "artist": "Albert Bierstadt",
+      "credit": "Albert Bierstadt",
+      "date": "1866",
+      "id": "commons-21914112",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Albert_Bierstadt_-_A_Storm_in_the_Rocky_Mountains%2C_Mt._Rosalie_-_Google_Art_Project.jpg/3840px-Albert_Bierstadt_-_A_Storm_in_the_Rocky_Mountains%2C_Mt._Rosalie_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Albert_Bierstadt_-_A_Storm_in_the_Rocky_Mountains,_Mt._Rosalie_-_Google_Art_Project.jpg",
+      "title": "A Storm in the Rocky Mountains, Mt. Rosalie"
+    },
+    {
+      "artist": "Caspar David Friedrich",
+      "credit": "Caspar David Friedrich",
+      "date": "1830",
+      "id": "commons-15393901",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Caspar_David_Friedrich_-_The_Riesengebirge_-_WGA8285.jpg/3840px-Caspar_David_Friedrich_-_The_Riesengebirge_-_WGA8285.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_The_Riesengebirge_-_WGA8285.jpg",
+      "title": "The Riesengebirge Mountains"
+    }
+  ],
+  "renaissance": [
+    {
+      "artist": "Sandro Botticelli",
+      "credit": "Sandro Botticelli",
+      "date": "1485",
+      "id": "commons-22507491",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/3840px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+      "title": "The Birth of Venus"
+    },
+    {
+      "artist": "Titian",
+      "credit": "Titian",
+      "date": "1555",
+      "id": "commons-21996715",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Titian_-_Venus_with_a_Mirror_-_Google_Art_Project.jpg/3840px-Titian_-_Venus_with_a_Mirror_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Titian_-_Venus_with_a_Mirror_-_Google_Art_Project.jpg",
+      "title": "Venus with a Mirror"
+    },
+    {
+      "artist": "Giovanni Bellini",
+      "credit": "Giovanni Bellini",
+      "date": "1480",
+      "id": "commons-22554501",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Giovanni_Bellini_-_Saint_Francis_in_the_Desert_-_Google_Art_Project.jpg/3840px-Giovanni_Bellini_-_Saint_Francis_in_the_Desert_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Bellini_-_Saint_Francis_in_the_Desert_-_Google_Art_Project.jpg",
+      "title": "Saint Francis in the Desert"
+    },
+    {
+      "artist": "Andrea Mantegna",
+      "credit": "Andrea Mantegna",
+      "date": "1495",
+      "id": "commons-104297124",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Andrea_Mantegna_-_Adoration_of_the_Magi_-_85.PA.417_-_J._Paul_Getty_MuseumFXD.jpg/3840px-Andrea_Mantegna_-_Adoration_of_the_Magi_-_85.PA.417_-_J._Paul_Getty_MuseumFXD.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_-_Adoration_of_the_Magi_-_85.PA.417_-_J._Paul_Getty_MuseumFXD.jpg",
+      "title": "Adoration of the Magi"
+    },
+    {
+      "artist": "Paolo Veronese",
+      "credit": "Paolo Veronese",
+      "date": "1547",
+      "id": "commons-21897794",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Paolo_Veronese_%28Paolo_Caliari%29_-_The_Mystic_Marriage_of_St._Catherine_-_Google_Art_Project.jpg/3840px-Paolo_Veronese_%28Paolo_Caliari%29_-_The_Mystic_Marriage_of_St._Catherine_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Paolo_Veronese_(Paolo_Caliari)_-_The_Mystic_Marriage_of_St._Catherine_-_Google_Art_Project.jpg",
+      "title": "The Mystic Marriage of St. Catherine"
+    },
+    {
+      "artist": "Albrecht Dürer",
+      "credit": "Albrecht Dürer",
+      "date": "1506",
+      "id": "commons-13358804",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Albrecht_D%C3%BCrer_-_Jesus_among_the_Doctors_-_Google_Art_Project.jpg/3840px-Albrecht_D%C3%BCrer_-_Jesus_among_the_Doctors_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Jesus_among_the_Doctors_-_Google_Art_Project.jpg",
+      "title": "Jesus among the Doctors"
+    },
+    {
+      "artist": "Jan van Eyck",
+      "credit": "Jan van Eyck",
+      "date": "1435",
+      "id": "commons-22003258",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Jan_van_Eyck_-_Kardinal_Niccol%C3%B2_Albergati_-_Google_Art_Project.jpg/3840px-Jan_van_Eyck_-_Kardinal_Niccol%C3%B2_Albergati_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_van_Eyck_-_Kardinal_Niccol%C3%B2_Albergati_-_Google_Art_Project.jpg",
+      "title": "Porträt des Kardinal Nicholaes Albergati"
+    },
+    {
+      "artist": "Leonardo da Vinci",
+      "credit": "Leonardo da Vinci",
+      "date": "1474",
+      "id": "commons-21979801",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Leonardo_da_Vinci_-_Ginevra_de%27_Benci_-_Google_Art_Project.jpg/3840px-Leonardo_da_Vinci_-_Ginevra_de%27_Benci_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Ginevra_de%27_Benci_-_Google_Art_Project.jpg",
+      "title": "Ginevra de' Benci"
+    },
+    {
+      "artist": "Giorgione",
+      "credit": "Giorgione",
+      "date": "1508",
+      "id": "commons-22003765",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Giorgione_-_Three_Philosophers_-_Google_Art_Project.jpg/3840px-Giorgione_-_Three_Philosophers_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giorgione_-_Three_Philosophers_-_Google_Art_Project.jpg",
+      "title": "Three Philosophers"
+    },
+    {
+      "artist": "Raphael",
+      "credit": "Raphael",
+      "date": "1515",
+      "id": "commons-22127049",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Raphael_-_The_Miraculous_Draft_of_Fishes_-_Google_Art_Project.jpg/3840px-Raphael_-_The_Miraculous_Draft_of_Fishes_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Raphael_-_The_Miraculous_Draft_of_Fishes_-_Google_Art_Project.jpg",
+      "title": "The Miraculous Draft of Fishes"
+    }
+  ],
+  "romanticism": [
+    {
+      "artist": "Thomas Cole",
+      "credit": "Thomas Cole",
+      "date": "1836",
+      "id": "commons-183045",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg/3840px-Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Course_of_Empire_Destruction_1836.jpg",
+      "title": "Destruction from The Course of Empire (paintings)"
+    },
+    {
+      "artist": "Frederic Edwin Church",
+      "credit": "Frederic Edwin Church",
+      "date": "1873",
+      "id": "commons-21914139",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Frederic_Edwin_Church_-_Tropical_Scenery_-_Google_Art_Project.jpg/3840px-Frederic_Edwin_Church_-_Tropical_Scenery_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frederic_Edwin_Church_-_Tropical_Scenery_-_Google_Art_Project.jpg",
+      "title": "Tropical Scenery"
+    },
+    {
+      "artist": "Albert Bierstadt",
+      "credit": "Albert Bierstadt",
+      "date": "1866",
+      "id": "commons-21914112",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Albert_Bierstadt_-_A_Storm_in_the_Rocky_Mountains%2C_Mt._Rosalie_-_Google_Art_Project.jpg/3840px-Albert_Bierstadt_-_A_Storm_in_the_Rocky_Mountains%2C_Mt._Rosalie_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Albert_Bierstadt_-_A_Storm_in_the_Rocky_Mountains,_Mt._Rosalie_-_Google_Art_Project.jpg",
+      "title": "A Storm in the Rocky Mountains, Mt. Rosalie"
+    },
+    {
+      "artist": "Caspar David Friedrich",
+      "credit": "Caspar David Friedrich",
+      "date": "1818",
+      "id": "commons-127245432",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/3840px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
+      "title": "Wanderer above the Sea of Fog"
+    },
+    {
+      "artist": "John Constable",
+      "credit": "John Constable",
+      "date": "1816",
+      "id": "commons-21996910",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/John_Constable_-_Wivenhoe_Park%2C_Essex_-_Google_Art_Project.jpg/3840px-John_Constable_-_Wivenhoe_Park%2C_Essex_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:John_Constable_-_Wivenhoe_Park,_Essex_-_Google_Art_Project.jpg",
+      "title": "Wivenhoe Park, Essex"
+    },
+    {
+      "artist": "Ivan Aivazovsky",
+      "credit": "Hovhannes Aivazovsky (1817 - 1900) – painter (Russian) Born in Rossiiskaya imperiya, Feodosia. Died in Rossiiskaya imperiya, Feodosia. Details on Google Art Project",
+      "date": "1850",
+      "id": "commons-21854187",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hovhannes_Aivazovsky_-_The_Ninth_Wave_-_Google_Art_Project.jpg/3840px-Hovhannes_Aivazovsky_-_The_Ninth_Wave_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hovhannes_Aivazovsky_-_The_Ninth_Wave_-_Google_Art_Project.jpg",
+      "title": "The Ninth Wave"
+    },
+    {
+      "artist": "John Martin",
+      "credit": "John Martin",
+      "date": "1834",
+      "id": "commons-22153410",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/John_Martin_-_The_Deluge_-_Google_Art_Project.jpg/3840px-John_Martin_-_The_Deluge_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:John_Martin_-_The_Deluge_-_Google_Art_Project.jpg",
+      "title": "The Deluge"
+    },
+    {
+      "artist": "Eugène Delacroix",
+      "credit": "Eugène Delacroix",
+      "date": "1830",
+      "id": "commons-147987667",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/3840px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
+      "title": "Liberty Leading the People"
+    },
+    {
+      "artist": "William Blake",
+      "credit": "William Blake",
+      "date": "1819",
+      "id": "commons-142375786",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/William_Blake_-_The_Ghost_of_a_Flea_-_Google_Art_ProjectFXD.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:William_Blake_-_The_Ghost_of_a_Flea_-_Google_Art_ProjectFXD.jpg",
+      "title": "The Ghost of a Flea"
+    },
+    {
+      "artist": "Thomas Cole",
+      "credit": "Thomas Cole",
+      "date": "1842",
+      "id": "commons-134506946",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Thomas_Cole_-_The_Voyage_of_Life_Youth%2C_1842_%28National_Gallery_of_Art%29FXD.jpg/3840px-Thomas_Cole_-_The_Voyage_of_Life_Youth%2C_1842_%28National_Gallery_of_Art%29FXD.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Thomas_Cole_-_The_Voyage_of_Life_Youth,_1842_(National_Gallery_of_Art)FXD.jpg",
+      "title": "The Voyage of Life: Youth"
+    }
+  ],
+  "visionary": [
+    {
+      "artist": "Rick Guidice",
+      "credit": "NASA / Rick Guidice",
+      "date": "1976",
+      "id": "nasa-AC76-0628",
+      "image_url": "https://images-assets.nasa.gov/image/AC76-0628/AC76-0628~large.jpg",
+      "license": "NASA media guidelines",
+      "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "source_url": "https://images.nasa.gov/details/AC76-0628",
+      "title": "Space Colony"
+    },
+    {
+      "artist": "Don Davis",
+      "credit": "NASA / Don Davis",
+      "date": "1975",
+      "id": "nasa-ARC-1975-AC75-2621",
+      "image_url": "https://images-assets.nasa.gov/image/ARC-1975-AC75-2621/ARC-1975-AC75-2621~large.jpg",
+      "license": "NASA media guidelines",
+      "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "source_url": "https://images.nasa.gov/details/ARC-1975-AC75-2621",
+      "title": "Torus sphere Interior view. Space Colonization. ref: NASA SP-413; Space Settlements: A Design Study"
+    },
+    {
+      "artist": "David Revoy",
+      "credit": "David Revoy · Pepper&Carrot",
+      "date": "2021",
+      "id": "revoy-1a792c10caa6f372",
+      "image_url": "https://www.peppercarrot.com/0_sources/0ther/misc/hi-res/2021-09-29_Lofi_Cyberpunk_by_David-Revoy_by-David-Revoy.jpg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_url": "https://www.peppercarrot.com/en/viewer/misc__2021-09-29_Lofi_Cyberpunk_by_David-Revoy_by-David-Revoy.html",
+      "title": "Lofi Cyberpunk"
+    },
+    {
+      "artist": "David Revoy",
+      "credit": "David Revoy · Pepper&Carrot",
+      "date": "2025",
+      "id": "revoy-013bfbef151c8627",
+      "image_url": "https://www.peppercarrot.com/0_sources/0ther/misc/hi-res/2025-05-05_A-Drink-Alone_by-David-Revoy.jpg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_url": "https://www.peppercarrot.com/en/viewer/misc__2025-05-05_A-Drink-Alone_by-David-Revoy.html",
+      "title": "A Drink Alone"
+    },
+    {
+      "artist": "David Revoy",
+      "credit": "David Revoy · Pepper&Carrot",
+      "date": "2006",
+      "id": "revoy-cff1141b183bbc00",
+      "image_url": "https://www.peppercarrot.com/0_sources/0ther/misc/hi-res/2006-01-17_Village-in-the-Air_by-David-Revoy.jpg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_url": "https://www.peppercarrot.com/en/viewer/misc__2006-01-17_Village-in-the-Air_by-David-Revoy.html",
+      "title": "Village in the Air"
+    },
+    {
+      "artist": "Luigi Russolo",
+      "credit": "Luigi Russolo",
+      "date": "1911",
+      "id": "commons-20668043",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Luigi_Russolo_La_Rivolta_1911.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Luigi_Russolo_La_Rivolta_1911.jpg",
+      "title": "The Revolt"
+    },
+    {
+      "artist": "Umberto Boccioni",
+      "credit": "Umberto Boccioni",
+      "date": "1915",
+      "id": "commons-45153051",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Boccioni_-_Carica_dei_Lancieri.JPG",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Boccioni_-_Carica_dei_Lancieri.JPG",
+      "title": "Charge of the Lancers"
+    },
+    {
+      "artist": "Hieronymus Bosch",
+      "credit": "Hieronymus Bosch",
+      "date": "1490",
+      "id": "commons-22605738",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg/3840px-The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg",
+      "title": "The Garden of Earthly Delights"
+    },
+    {
+      "artist": "Arnold Böcklin",
+      "credit": "Arnold Böcklin",
+      "date": "1880",
+      "id": "commons-1690675",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Arnold_B%C3%B6cklin_-_Die_Toteninsel_I_%28Basel%2C_Kunstmuseum%29.jpg/3840px-Arnold_B%C3%B6cklin_-_Die_Toteninsel_I_%28Basel%2C_Kunstmuseum%29.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_-_Die_Toteninsel_I_(Basel,_Kunstmuseum).jpg",
+      "title": "Isle of the Dead"
+    },
+    {
+      "artist": "Gustave Moreau",
+      "credit": "Gustave Moreau",
+      "date": "1876",
+      "id": "commons-22633150",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Gustave_Moreau_-_The_Apparition_-_Google_Art_Project.jpg/3840px-Gustave_Moreau_-_The_Apparition_-_Google_Art_Project.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gustave_Moreau_-_The_Apparition_-_Google_Art_Project.jpg",
+      "title": "L'Apparition"
+    }
+  ]
+}

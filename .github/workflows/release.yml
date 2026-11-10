@@ -1,0 +1,62 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            target: x86_64-unknown-linux-musl
+          - os: ubuntu-24.04-arm
+            target: aarch64-unknown-linux-musl
+          - os: macos-15
+            target: aarch64-apple-darwin
+          - os: macos-15-intel
+            target: x86_64-apple-darwin
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Linux binary
+        if: runner.os == 'Linux'
+        run: |
+          docker run --rm -v "$PWD:/work" -w /work rust:1-alpine sh -c 'cargo test --locked && cargo build --release --locked --bin paintings'
+      - name: Build macOS binary
+        if: runner.os == 'macOS'
+        run: |
+          rustup toolchain install stable --profile minimal
+          cargo +stable test --locked
+          cargo +stable build --release --locked --bin paintings
+      - name: Package
+        run: |
+          mkdir -p package
+          cp target/release/paintings LICENSE README.md package/
+          cp -R docs package/
+          cp CONTRIBUTING.md package/
+          tar -czf "paintings-${{ matrix.target }}.tar.gz" -C package .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: paintings-${{ matrix.target }}
+          path: paintings-${{ matrix.target }}.tar.gz
+  publish:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          merge-multiple: true
+      - run: |
+          cd artifacts
+          sha256sum *.tar.gz > SHA256SUMS
+          gh release create "$RELEASE_TAG" *.tar.gz SHA256SUMS --repo "$GITHUB_REPOSITORY" --title "Paintings $RELEASE_TAG" --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}

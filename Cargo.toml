@@ -1,0 +1,42 @@
+[package]
+name = "bestquark-paintings"
+version = "0.3.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Rotating art for desktops, terminals, and web apps"
+license = "MIT"
+repository = "https://github.com/bestquark/paintings"
+default-run = "paintings"
+include = ["src/**", "catalog/**", "config/**", "web/**", "adapters/**", "tools/previews.json", "Cargo.toml", "Cargo.lock", "build.rs", "README.md", "LICENSE"]
+
+[features]
+catalog-tools = ["dep:image"]
+
+[[bin]]
+name = "paintings"
+path = "src/main.rs"
+
+[[bin]]
+name = "paintings-catalog"
+path = "src/bin/catalog.rs"
+required-features = ["catalog-tools"]
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+fs2 = "0.4"
+libc = "0.2"
+plist = "1"
+regex = "1"
+serde_json = "1"
+sha2 = "0.10"
+tempfile = "3"
+ureq = "3.5"
+url = "2"
+wait-timeout = "0.2"
+image = { version = "0.25", optional = true, default-features = false, features = ["jpeg", "png"] }
+
+[profile.release]
+lto = "thin"
+strip = true
+codegen-units = 1

@@ -9,17 +9,21 @@ Each stream must retain at least 200 distinct artworks. Thematic overlap between
 Run the offline contract and behavior checks:
 
 ```sh
-python3 -m unittest discover -s tests -v
+cargo test --all-features
+cargo clippy --all-targets --all-features -- -D warnings
 node --check web/paintings.js
 ```
 
-For source and image verification, install Pillow and NumPy in a development environment, then run:
+Catalog tools are also Rust; image processing is an optional build feature:
 
 ```sh
-python3 tools/verify_images.py landscapes
-python3 tools/finalize.py landscapes --sheets
+cargo run --release --features catalog-tools --bin paintings-catalog -- verify landscapes
+cargo run --release --features catalog-tools --bin paintings-catalog -- finalize landscapes --sheets
+cargo run --release --features catalog-tools --bin paintings-catalog -- previews
 ```
 
-This downloads real source images and writes private analysis under `.work/`. Inspect the contact sheets and source pages. Perceptual matching catches scan variants, but manual review is still needed. `tools/exclusions.json` records rejected candidates. `--write` on `finalize.py` replaces that stream with the first 200 verified entries, so review the Git diff afterward.
+Verification downloads source images and writes analysis under `.work/`. Inspect the contact sheets and source pages; perceptual matching needs manual review. `tools/exclusions.json` records rejected candidates. `finalize --write` replaces a stream with its first 200 verified entries. `tools/previews.json` selects the ten credited thumbnails per README row.
+
+`paintings gallery --output dist/gallery` builds the static web gallery. macOS source builds need Apple's command-line tools; release binaries already bundle the small native desktop helper. Existing JSON preferences and cached artwork remain compatible when upgrading from 0.2.
 
 Do not commit downloaded originals, local configuration, browser state, screenshots of private apps, or `.work/`. The repository is a catalog and integration package; artworks retain their own terms.

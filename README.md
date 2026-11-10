@@ -1,25 +1,35 @@
 # Paintings
 
-Rotating art for desktops, terminals, and web apps. Eight streams, 200 existing artworks each: **classical**, **landscapes**, **renaissance**, **baroque**, **romanticism**, **impressionism**, **abstraction**, and **visionary**. No generated images.
+Rotating art for desktops, terminals, and web apps. Built in Rust; no Python required. Eight streams, 200 existing artworks each. No generated images.
+
+| Stream | Ten examples |
+| :-- | :-- |
+| [classical](docs/previews/README.md#classical) | ![Ten classical architectural landscapes](docs/previews/classical.jpg) |
+| [landscapes](docs/previews/README.md#landscapes) | ![Ten landscape paintings](docs/previews/landscapes.jpg) |
+| [renaissance](docs/previews/README.md#renaissance) | ![Ten Renaissance paintings](docs/previews/renaissance.jpg) |
+| [baroque](docs/previews/README.md#baroque) | ![Ten Baroque paintings](docs/previews/baroque.jpg) |
+| [romanticism](docs/previews/README.md#romanticism) | ![Ten Romantic paintings](docs/previews/romanticism.jpg) |
+| [impressionism](docs/previews/README.md#impressionism) | ![Ten Impressionist and Post-Impressionist paintings](docs/previews/impressionism.jpg) |
+| [abstraction](docs/previews/README.md#abstraction) | ![Ten abstract and Cubist paintings](docs/previews/abstraction.jpg) |
+| [visionary](docs/previews/README.md#visionary) | ![Ten visionary, futuristic, and science-fiction artworks](docs/previews/visionary.jpg) |
 
 ## Install
 
-Requires Python 3.9+. macOS desktop support also requires Apple's command-line tools.
+Extract a [release binary](https://github.com/bestquark/paintings/releases/latest) and run `./paintings install --adapters desktop`. Or build with Cargo:
 
 ```sh
-git clone https://github.com/bestquark/paintings.git
-cd paintings
-python3 -m paintings install --adapters desktop
-python3 -m paintings tick
+cargo install --git https://github.com/bestquark/paintings --locked --bin paintings
+paintings install --adapters desktop
+paintings tick
 ```
 
 Defaults to **classical**, changes every **5 minutes**, and fills the screen with proportional cropping. Images download on demand. macOS uses a user LaunchAgent; Linux uses a user systemd timer.
 
 ```sh
-python3 -m paintings configure --stream landscapes --fit cover --apply
-python3 -m paintings next
-python3 -m paintings status
-python3 -m paintings uninstall
+paintings configure --stream landscapes --fit cover --apply
+paintings next
+paintings status
+paintings uninstall
 ```
 
 ## Integrations
@@ -29,7 +39,7 @@ Desktop: **macOS**, **GNOME**, **PCManFM**. Optional adapters: **ghostty**, **it
 For OpenChamber, install the browser plugin into its web build and refresh:
 
 ```sh
-python3 -m paintings install-web --root /path/to/openchamber/web/dist
+paintings install-web --root /path/to/openchamber/web/dist
 ```
 
 For other websites, serve `web/paintings.js`, `web/paintings.css`, `catalog/`, and `config/` together and include `<script defer src="/paintings/paintings.js" data-paintings></script>`.
