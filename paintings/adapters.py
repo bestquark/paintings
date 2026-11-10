@@ -3,6 +3,7 @@ import os
 import platform
 import shutil
 import subprocess
+import tempfile
 from pathlib import Path
 from .core import ROOT, STATE, CONFIG, atomic, backup, managed_block
 
@@ -94,9 +95,16 @@ def iterm(image,cfg):
     if not saved.exists():
         old=subprocess.run(['defaults','read','com.googlecode.iterm2','DefaultBookmarkGuid'],capture_output=True,text=True)
         atomic(saved,json.dumps({'present':old.returncode==0,'value':old.stdout.strip()}))
-    atomic(profiles,json.dumps({'Profiles':[{'Name':'Paintings','Guid':'2C5D36E7-47CF-40C2-A60B-5A835453CD41',
+    payload=json.dumps({'Profiles':[{'Name':'Paintings','Guid':'2C5D36E7-47CF-40C2-A60B-5A835453CD41',
         'Dynamic Profile Parent Name':'Default','Background Image Location':str(image),
-        'Background Image Mode':2 if cfg.get('fit')=='cover' else 3,'Blend':1-cfg.get('terminal_opacity',.16)}]},indent=2))
+        'Background Image Mode':2 if cfg.get('fit')=='cover' else 3,'Blend':1-cfg.get('terminal_opacity',.16)}]},indent=2)
+    profiles.parent.mkdir(parents=True,exist_ok=True)
+    # iTerm2 parses every file in DynamicProfiles, including unfinished temporary files.
+    # Stage beside the watched directory, on the same filesystem, then replace atomically.
+    with tempfile.TemporaryDirectory(prefix='.paintings-',dir=profiles.parent.parent) as folder:
+        prepared=Path(folder)/profiles.name
+        prepared.write_text(payload,encoding='utf-8')
+        prepared.replace(profiles)
     # Dynamic profiles are watched by iTerm2. No Apple Events or permission prompts.
     run(['defaults','write','com.googlecode.iterm2','DefaultBookmarkGuid','-string','2C5D36E7-47CF-40C2-A60B-5A835453CD41'])
     return {'profile':str(profiles),'default':True,'note':'Existing windows can select Paintings once; new windows use this profile.'}
