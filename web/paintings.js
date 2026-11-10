@@ -96,7 +96,7 @@
     }
     select.value = ['all', ...cfg.available_streams].includes(stored('stream')) ? stored('stream') : (cfg.streams.length === 1 ? cfg.streams[0] : 'all');
     background.style.opacity = chamber ? Math.max(0, Math.min(.4, Number(cfg.web_opacity ?? .16))) : 1;
-    background.style.backgroundSize = cfg.fit === 'cover' ? 'cover' : 'contain';
+    background.style.backgroundSize = chamber || cfg.fit !== 'contain' ? 'cover' : 'contain';
     document.documentElement.style.setProperty('--painting-opacity', background.style.opacity);
     document.documentElement.style.setProperty('--painting-fit', background.style.backgroundSize);
     if (initial && stored('hidden') === 'yes') close.click(); else rotate();

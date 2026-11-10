@@ -11,6 +11,7 @@
 /* Keep theme colors and raised surfaces; only the main canvas becomes clear. */
 .paintings-openchamber:not(.paintings-hidden) body { background:#141412 !important; }
 .paintings-openchamber.light:not(.paintings-hidden) body { background:#fdfcfa !important; }
+.paintings-openchamber #paintings-background { background-size:cover !important; }
 .paintings-openchamber:not(.paintings-hidden) #root, .paintings-openchamber:not(.paintings-hidden) #root .bg-background { background-color:transparent !important; }
 .paintings-openchamber:not(.paintings-hidden) [role="dialog"], .paintings-openchamber:not(.paintings-hidden) [role="menu"], .paintings-openchamber:not(.paintings-hidden) [data-radix-popper-content-wrapper], .paintings-openchamber:not(.paintings-hidden) [role="dialog"] .bg-background, .paintings-openchamber:not(.paintings-hidden) [role="menu"] .bg-background { background-color:var(--surface-background,#191919) !important; }
 @media (max-width:600px) { #paintings-controls { left:6px; bottom:5px; gap:3px; max-width:calc(100vw - 12px); } #paintings-controls a { max-width:80px; } #paintings-controls select { max-width:105px; } }
@@ -33,5 +34,5 @@
 .paintings-openchamber.dark:not(.paintings-hidden) .oc-terminal-canvas { mix-blend-mode:screen; }
 .paintings-openchamber.light:not(.paintings-hidden) .oc-terminal-canvas { mix-blend-mode:multiply; }
 
-.paintings-openchamber:not(.paintings-hidden) .terminal-viewport-container::before { content:""; position:absolute; inset:0; pointer-events:none; background:var(--painting-image) center/var(--painting-fit,cover) no-repeat; opacity:var(--painting-opacity,.16); }
+.paintings-openchamber:not(.paintings-hidden) .terminal-viewport-container::before { content:""; position:absolute; inset:0; pointer-events:none; background:var(--painting-image) center/cover no-repeat; opacity:var(--painting-opacity,.16); }
 .paintings-openchamber:not(.paintings-hidden) .oc-terminal-canvas { position:relative; }
