@@ -13,7 +13,7 @@ if not (ROOT/'catalog').is_dir(): ROOT=Path(sys.prefix)/'share'/'paintings'
 CONFIG = Path(os.environ.get('XDG_CONFIG_HOME',Path.home()/'.config'))/'paintings'
 STATE = Path(os.environ.get('XDG_STATE_HOME',Path.home()/'.local'/'state'))/'paintings'
 CACHE = Path(os.environ.get('XDG_CACHE_HOME',Path.home()/'.cache'))/'paintings'
-STREAMS = ('renaissance','baroque','romanticism','impressionism','abstraction','visionary','landscapes')
+STREAMS = ('renaissance','baroque','romanticism','impressionism','abstraction','visionary','landscapes','classical')
 
 def atomic(path,data):
     path=Path(path);path.parent.mkdir(parents=True,exist_ok=True)
@@ -26,8 +26,12 @@ def write_json(path,value): atomic(path,json.dumps(value,indent=2,ensure_ascii=F
 def config():
     d=json.loads((ROOT/'config'/'default.json').read_text())
     if (CONFIG/'config.json').exists():d.update(json.loads((CONFIG/'config.json').read_text()))
+    return validate_config(d)
+
+def validate_config(d):
     if not isinstance(d['interval_seconds'],int) or not 30<=d['interval_seconds']<=86400:raise ValueError('interval_seconds must be 30–86400')
     if not d['streams'] or any(s not in STREAMS for s in d['streams']):raise ValueError('Unknown or empty stream selection')
+    if d.get('fit') not in ('cover','contain'):raise ValueError('fit must be cover or contain')
     return d
 
 def catalog(stream):

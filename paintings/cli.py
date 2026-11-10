@@ -12,16 +12,17 @@ import sys
 import time
 from pathlib import Path
 from . import __version__
-from .core import ROOT, CONFIG, STATE, CACHE, STREAMS, atomic, write_json, config, catalog, selection, download, backup, current, trim_cache
+from .core import ROOT, CONFIG, STATE, CACHE, STREAMS, atomic, write_json, config, catalog, selection, download, backup, current, trim_cache, validate_config
 from .adapters import ADAPTERS, run
 
-def sync_config(cfg):
+VISUAL_KEYS = ('interval_seconds','streams','seed','fit','terminal_opacity','web_opacity')
+
+def sync_config(cfg, refresh=True):
     """Only public visual preferences are shared; local adapter choices stay local."""
     import urllib.request
     url=cfg.get('config_url')
-    if not url:return cfg
     cached=STATE/'shared.json'
-    if not cached.exists() or time.time()-cached.stat().st_mtime>3600:
+    if url and refresh and (not cached.exists() or time.time()-cached.stat().st_mtime>3600):
         try:
             if not url.startswith('https://'):raise ValueError('Shared config requires HTTPS')
             with urllib.request.urlopen(url,timeout=8) as response:d=json.load(response)
@@ -29,11 +30,56 @@ def sync_config(cfg):
             if not d.get('streams') or any(s not in STREAMS for s in d['streams']):raise ValueError('Invalid streams')
             write_json(cached,d)
         except Exception as e:print('Shared config: using cached preferences:',str(e),file=sys.stderr)
-    if cached.exists():
+    if url and cached.exists():
         d=json.loads(cached.read_text())
-        for k in ('interval_seconds','streams','seed','fit','terminal_opacity','web_opacity'):
+        for k in VISUAL_KEYS:
             if k in d:cfg[k]=d[k]
-    return cfg
+    overrides=cfg.get('overrides',{})
+    if not isinstance(overrides,dict):raise ValueError('overrides must be an object')
+    cfg.update({k:v for k,v in overrides.items() if k in VISUAL_KEYS})
+    return validate_config(cfg)
+
+def status():
+    cfg=sync_config(config(),refresh=False)
+    return {'settings':{k:cfg[k] for k in VISUAL_KEYS},'overrides':cfg.get('overrides',{}),
+            'available_streams':list(STREAMS),'current':current()}
+
+def configure(args):
+    CONFIG.mkdir(parents=True,exist_ok=True)
+    with (CONFIG/'config.lock').open('w') as lock:
+        if os.name!='nt':
+            import fcntl
+            fcntl.flock(lock,fcntl.LOCK_EX)
+        cfg=config();overrides=cfg.setdefault('overrides',{})
+        if args.stream=='default':overrides.pop('streams',None)
+        elif args.stream:overrides['streams']=list(STREAMS) if args.stream=='all' else [args.stream]
+        if args.fit=='default':overrides.pop('fit',None)
+        elif args.fit:overrides['fit']=args.fit
+        validate_config({**cfg,**overrides})
+        backup(CONFIG/'config.json');write_json(CONFIG/'config.json',cfg)
+    result={'settings_saved':True,'applied':False}
+    if args.apply:
+        try:
+            applied=tick(argparse.Namespace())
+            if 'skipped' in applied:result['error']='Rotation is busy; saved settings will apply at the next scheduled rotation.'
+            else:
+                result['applied']=all(a['ok'] for a in applied['adapters'].values())
+                if not result['applied']:result['error']='Settings saved; one or more adapters could not apply the painting.'
+        except Exception as e:result['error']=str(e)
+    result.update(status());return result
+
+def sync_web(cfg):
+    registry=STATE/'web-roots.json'
+    if not registry.exists():return []
+    data={k:cfg[k] for k in VISUAL_KEYS}
+    data['available_streams']=list(STREAMS)
+    data['preference_revision']='2-'+hashlib.sha256(json.dumps(data,sort_keys=True).encode()).hexdigest()[:12]
+    updated=[]
+    for root in json.loads(registry.read_text()):
+        target=Path(root)/'paintings/config/default.json'
+        if not target.exists():raise RuntimeError('Web integration missing; run install-web again after frontend updates')
+        write_json(target,data);updated.append(root)
+    return updated
 
 def tick(args):
     cfg=sync_config(config());STATE.mkdir(parents=True,exist_ok=True)
@@ -44,7 +90,7 @@ def tick(args):
             except BlockingIOError:return {'skipped':'rotation already running'}
         if getattr(args,'stream',None):cfg['streams']=[args.stream]
         if getattr(args,'id',None):
-            found=[(s,a) for s in STREAMS for a in catalog(s) if a['id']==args.id]
+            found=[(s,a) for s in dict.fromkeys(cfg['streams']+list(STREAMS)) for a in catalog(s) if a['id']==args.id]
             if not found:raise ValueError('Unknown artwork ID')
             stream,art=found[0];image=download(art)
         else:
@@ -62,7 +108,10 @@ def tick(args):
         for name in cfg['adapters']:
             try:results[name]={'ok':True,'detail':ADAPTERS[name](image,cfg)}
             except Exception as e:results[name]={'ok':False,'error':str(e)}
-        state={'time':time.time(),'stream':stream,'artwork':art,'path':str(image),'interval_seconds':cfg['interval_seconds'],
+        if (STATE/'web-roots.json').exists():
+            try:results['web']={'ok':True,'detail':{'updated':sync_web(cfg)}}
+            except Exception as e:results['web']={'ok':False,'error':str(e)}
+        state={'time':time.time(),'stream':stream,'artwork':art,'path':str(image),'interval_seconds':cfg['interval_seconds'],'fit':cfg['fit'],
             'manual_offset':offset if not getattr(args,'id',None) else 0,'adapters':results}
         write_json(STATE/'current.json',state)
         trim_cache(cfg,{str(image)})
@@ -72,7 +121,7 @@ def install(args):
     cfg=config();cfg['adapters']=args.adapters.split(',')
     if any(a not in ADAPTERS for a in cfg['adapters']):raise ValueError('Unknown adapter')
     if args.config_url:cfg['config_url']=args.config_url
-    if args.stream:cfg['streams']=[args.stream]
+    if args.stream:cfg.setdefault('overrides',{})['streams']=[args.stream]
     backup(CONFIG/'config.json');write_json(CONFIG/'config.json',cfg)
     executable=Path(sys.executable).resolve()
     launcher=Path.home()/'.local/bin/paintings';backup(launcher)
@@ -143,9 +192,13 @@ def install_web(args):
     if index.exists():
         backup(index);s=index.read_text()
         digest=hashlib.sha256((ROOT/'web/paintings.js').read_bytes()+(ROOT/'web/paintings.css').read_bytes()).hexdigest()[:12]
-        tag='<script defer src="/paintings/paintings.js?v='+digest+'" data-paintings data-openchamber></script>'
+        tag='<script defer src="/paintings/paintings.js?v='+digest+'" data-paintings data-openchamber data-position="top"></script>'
         s=re.sub(r'<script[^>]*data-paintings[^>]*></script>','',s)
         atomic(index,s.replace('</head>',tag+'</head>',1))
+    registry=STATE/'web-roots.json'
+    roots=json.loads(registry.read_text()) if registry.exists() else []
+    if str(target) not in roots:roots.append(str(target))
+    write_json(registry,roots)
     return {'installed':str(dest),'entry':str(index),'reload':'Refresh the browser; no backend restart required.'}
 
 def main():
@@ -153,7 +206,8 @@ def main():
     sub=ap.add_subparsers(dest='command',required=True)
     for name in ('tick','next'):
         p=sub.add_parser(name);p.add_argument('--stream',choices=STREAMS);p.add_argument('--id')
-    sub.add_parser('current');sub.add_parser('streams')
+    sub.add_parser('current');sub.add_parser('streams');sub.add_parser('status')
+    p=sub.add_parser('configure');p.add_argument('--stream',choices=(*STREAMS,'all','default'));p.add_argument('--fit',choices=('cover','contain','default'));p.add_argument('--apply',action='store_true')
     p=sub.add_parser('install');p.add_argument('--adapters',default='desktop');p.add_argument('--config-url');p.add_argument('--stream',choices=STREAMS)
     p=sub.add_parser('install-web');p.add_argument('--root',required=True)
     sub.add_parser('uninstall')
@@ -162,6 +216,8 @@ def main():
     try:
         if args.command in ('tick','next'):args.next=args.command=='next';result=tick(args)
         elif args.command=='current':result=current()
+        elif args.command=='status':result=status()
+        elif args.command=='configure':result=configure(args)
         elif args.command=='streams':result={s:len(catalog(s)) for s in STREAMS}
         elif args.command=='install':result=install(args)
         elif args.command=='uninstall':result=uninstall(args)

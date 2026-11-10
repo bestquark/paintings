@@ -10,12 +10,15 @@ let options: [NSWorkspace.DesktopImageOptionKey: Any] = [
     .allowClipping: fit == "cover",
     .fillColor: NSColor(calibratedWhite: 0.055, alpha: 1)
 ]
-var screens: [[String: String]] = []
+var screens: [[String: Any]] = []
 for screen in NSScreen.screens {
     do {
         if path != "--inspect" { try NSWorkspace.shared.setDesktopImageURL(url, for: screen, options: options) }
         if path != "--inspect" { Thread.sleep(forTimeInterval: 0.4) }
+        let applied = NSWorkspace.shared.desktopImageOptions(for: screen) ?? [:]
         screens.append(["screen": screen.localizedName,
+                        "clipping": applied[.allowClipping] as? Bool ?? false,
+                        "scaling": applied[.imageScaling] as? Int ?? -1,
                         "url": NSWorkspace.shared.desktopImageURL(for: screen)?.path ?? ""])
     } catch { fputs("\(error)\n", stderr); exit(1) }
 }

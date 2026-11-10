@@ -42,9 +42,6 @@ def finalize(stream,target=200):
   key=re.sub(r'\W','',a['title'].lower())
   if len(key)>15 and any(re.sub(r'\W','',b['title'].lower())==key and b['artist']==a['artist'] and b.get('date')==a.get('date') for b in kept):dropped.append((a['id'],'same title'));continue
   seen.append((h,a['id']));a['display_width']=check['width'];a['display_height']=check['height'];a['image_sha256']=check['sha256'];kept.append(a)
- # Preserve user's requested anchor.
- anchor=next((a for a in kept if a['id']=='commons-183030'),None)
- if anchor:kept.remove(anchor);kept.insert(0,anchor);anchor['title']='The Course of Empire: The Consummation of Empire';anchor['date']='1836'
  (ROOT/'.work'/f'{stream}-verified.json').write_text(json.dumps(kept,ensure_ascii=False))
  (ROOT/'.work'/f'{stream}-excluded.json').write_text(json.dumps(dropped))
  print(stream,'valid unique',len(kept),'dropped',len(dropped),flush=True)
@@ -64,6 +61,6 @@ def sheet(stream,items):
     canvas.paste(im,(x,y));draw.text(((n%8)*240+4,y+153),str(start+n)+' '+a['id'],fill='white');draw.text(((n%8)*240+4,y+166),a['title'][:34],fill='#ddd')
   canvas.save(folder/f'{stream}-{start//64}.jpg',quality=90)
 if __name__=='__main__':
- for stream in [x for x in sys.argv[1:] if not x.startswith('--')] or ['renaissance','baroque','romanticism','impressionism','abstraction','visionary','landscapes']:
+ for stream in [x for x in sys.argv[1:] if not x.startswith('--')] or ['renaissance','baroque','romanticism','impressionism','abstraction','visionary','landscapes','classical']:
   items=finalize(stream)
   if '--sheets' in sys.argv:sheet(stream,items)

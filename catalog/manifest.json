@@ -1,7 +1,7 @@
 {
-  "version": "0.1.0",
-  "reviewed_at": "2026-11-09",
-  "stream_count": 7,
+  "version": "0.2.0",
+  "reviewed_at": "2026-11-10",
+  "stream_count": 8,
   "artwork_policy": "Existing artwork only; no generated imagery",
   "streams": {
     "renaissance": {
@@ -31,13 +31,17 @@
     "landscapes": {
       "entries": 200,
       "sha256": "ccb85ccbb0575dd4113dfdea82d1df6d45dd65220348be14630ec993e9b2ee56"
+    },
+    "classical": {
+      "entries": 200,
+      "sha256": "c6d071e548704d3714c734b7da3c2da0a003131b404d86b1965489cc9dc103d6"
     }
   },
-  "total_entries": 1400,
-  "distinct_artwork_ids": 1227,
+  "total_entries": 1600,
+  "distinct_artwork_ids": 1415,
   "license_entries": {
-    "Public domain": 1278,
-    "CC0": 41,
+    "Public domain": 1472,
+    "CC0": 47,
     "NASA media guidelines": 31,
     "CC BY 4.0": 50
   }

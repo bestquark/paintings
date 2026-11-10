@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bestquark-paintings"
-version = "0.1.0"
-description = "Seven streams of existing art for desktops, terminals, and the web"
+version = "0.2.0"
+description = "Eight streams of existing art for desktops, terminals, and the web"
 requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [{name = "bestquark"}]

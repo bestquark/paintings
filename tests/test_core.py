@@ -35,3 +35,30 @@ class RotationTests(unittest.TestCase):
    self.assertEqual(json.loads(current.read_text()),{'kept':True})
 
 if __name__=='__main__':unittest.main()
+
+class PreferenceTests(unittest.TestCase):
+ def test_local_choices_survive_shared_refresh(self):
+  from paintings import cli
+  with tempfile.TemporaryDirectory() as folder,patch.object(cli,'STATE',Path(folder)):
+   core.write_json(Path(folder)/'shared.json',{'streams':['classical'],'fit':'cover','interval_seconds':300})
+   cfg={'streams':['landscapes'],'fit':'contain','interval_seconds':300,'config_url':'https://example.com/config.json','overrides':{'streams':['renaissance'],'fit':'contain'}}
+   self.assertEqual(cli.sync_config(cfg)['streams'],['renaissance'])
+   self.assertEqual(cli.sync_config(cfg)['fit'],'contain')
+   cfg['overrides']={}
+   self.assertEqual(cli.sync_config(cfg)['streams'],['classical'])
+   self.assertEqual(cli.sync_config(cfg)['fit'],'cover')
+ def test_bad_shared_sizing_cannot_reach_adapters(self):
+  from paintings import cli
+  with tempfile.TemporaryDirectory() as folder,patch.object(cli,'STATE',Path(folder)):
+   core.write_json(Path(folder)/'shared.json',{'streams':['classical'],'fit':'invalid','interval_seconds':300})
+   with self.assertRaisesRegex(ValueError,'fit'):
+    cli.sync_config({'streams':['classical'],'fit':'cover','interval_seconds':300,'config_url':'https://example.com/config.json'})
+ def test_web_sync_exposes_only_visual_preferences(self):
+  from paintings import cli
+  with tempfile.TemporaryDirectory() as folder,patch.object(cli,'STATE',Path(folder)):
+   root=Path(folder)/'site';target=root/'paintings/config/default.json';core.write_json(target,{})
+   core.write_json(Path(folder)/'web-roots.json',[str(root)])
+   cfg={**json.loads((core.ROOT/'config/default.json').read_text()),'config_url':'https://private.example/secret','adapters':['desktop'],'overrides':{'streams':['landscapes']}}
+   cli.sync_web(cfg);public=json.loads(target.read_text())
+   self.assertNotIn('config_url',public);self.assertNotIn('overrides',public);self.assertNotIn('adapters',public)
+   self.assertIn('classical',public['available_streams']);self.assertEqual(public['fit'],'cover')

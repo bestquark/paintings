@@ -20,7 +20,7 @@
   const menu = document.createElement('details'); menu.id = 'paintings-menu';
   const toggle = document.createElement('summary'); toggle.textContent = 'Art'; toggle.title = 'Painting settings and credit';
   menu.append(toggle, controls);
-  if (document.getElementById('app-toolbar')) menu.classList.add('with-toolbar');
+  if (script.dataset.position === 'top') menu.classList.add('at-top');
   document.body.prepend(background); document.body.append(menu);
   document.documentElement.classList.add(chamber ? 'paintings-openchamber' : 'paintings-gallery');
   let cfg, catalogs = {}, offset = 0, paused = false, previous = '', serial = 0, hidden = false, rotating = false;
@@ -41,7 +41,7 @@
     const generation = ++serial;
     rotating = true;
     try {
-    const streams = select.value === 'all' ? cfg.streams : [select.value];
+    const streams = select.value === 'all' ? cfg.available_streams : [select.value];
     const start = Math.floor(Date.now() / 1000 / cfg.interval_seconds) + offset;
     for (let attempt = 0; attempt < 5; attempt++) {
       try {
@@ -76,17 +76,33 @@
   select.onchange = () => { offset = 0; persist('stream', select.value); rotate(true); };
   close.onclick = () => { hidden = !hidden; background.hidden = hidden; controls.classList.toggle('is-hidden', hidden); document.documentElement.classList.toggle('paintings-hidden', hidden); close.textContent = hidden ? 'Art' : 'Hide'; persist('hidden', hidden ? 'yes' : 'no'); if (!hidden) rotate(true); };
   window.paintings = { next: () => next.click(), pause: () => pause.click(), current: null };
-  fetch(new URL('config/default.json', base), { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error('Config unavailable'); return r.json(); }).then(data => {
+  async function refreshConfig() {
+    const response = await fetch(new URL('config/default.json', base), { cache: 'no-cache' });
+    if (!response.ok) throw new Error('Config unavailable');
+    const data = await response.json();
+    const initial = !cfg;
+    if (cfg && JSON.stringify(cfg) === JSON.stringify(data)) return;
+    if (cfg && cfg.seed !== data.seed) catalogs = {};
     cfg = data;
-    for (const value of ['all', ...cfg.streams]) {
+    cfg.available_streams ||= cfg.streams;
+    const revision = String(cfg.preference_revision || 1);
+    if (stored('revision') !== revision) {
+      persist('stream', cfg.streams.length === 1 ? cfg.streams[0] : 'all');
+      persist('revision', revision); offset = 0;
+    }
+    select.replaceChildren();
+    for (const value of [...cfg.available_streams, 'all']) {
       const option = document.createElement('option'); option.value = value; option.textContent = value.charAt(0).toUpperCase() + value.slice(1); select.append(option);
     }
-    select.value = cfg.streams.includes(stored('stream')) ? stored('stream') : 'all';
+    select.value = ['all', ...cfg.available_streams].includes(stored('stream')) ? stored('stream') : (cfg.streams.length === 1 ? cfg.streams[0] : 'all');
     background.style.opacity = chamber ? Math.max(0, Math.min(.4, Number(cfg.web_opacity ?? .16))) : 1;
     background.style.backgroundSize = cfg.fit === 'cover' ? 'cover' : 'contain';
     document.documentElement.style.setProperty('--painting-opacity', background.style.opacity);
     document.documentElement.style.setProperty('--painting-fit', background.style.backgroundSize);
-    if (stored('hidden') === 'yes') close.click(); else rotate();
+    if (initial && stored('hidden') === 'yes') close.click(); else rotate();
+  }
+  refreshConfig().then(() => {
     setInterval(rotate, 1000);
+    setInterval(() => refreshConfig().catch(error => console.warn('Paintings: keeping settings.', error.message)), 60000);
   }).catch(error => { menu.remove(); background.remove(); console.warn('Paintings:', error.message); });
 })();

@@ -35,7 +35,7 @@ def desktop(image,cfg):
             args=(Path('/proc')/pid/'cmdline').read_bytes().decode().split('\0')
             profile=args[args.index('--profile')+1] if '--profile' in args else 'default'
             for original in (Path.home()/'.config/pcmanfm'/profile).glob('desktop-items-*.conf'):backup(original)
-            run(['pcmanfm','--profile',profile,'--set-wallpaper='+str(image),'--wallpaper-mode=fit'],env=env)
+            run(['pcmanfm','--profile',profile,'--set-wallpaper='+str(image),'--wallpaper-mode='+('fit' if cfg.get('fit')=='contain' else 'crop')],env=env)
             return {'desktop':'pcmanfm','profile':profile,'image':str(image)}
         if shutil.which('gsettings'):
             schema='org.gnome.desktop.background';keys=run(['gsettings','list-keys',schema],env=env).splitlines()
@@ -45,9 +45,9 @@ def desktop(image,cfg):
             for key in ('picture-uri','picture-uri-dark'):
                 if key in keys:run(['gsettings','set',schema,key,image.as_uri()],env=env)
             run(['gsettings','set',schema,'picture-options','scaled' if cfg.get('fit')=='contain' else 'zoom'],env=env)
-            return {k:run(['gsettings','get',schema,k],env=env) for k in ('picture-uri','picture-uri-dark') if k in keys}
+            return {k:run(['gsettings','get',schema,k],env=env) for k in ('picture-uri','picture-uri-dark','picture-options') if k in keys}
         if shutil.which('pcmanfm'):
-            run(['pcmanfm','--set-wallpaper='+str(image),'--wallpaper-mode=fit'],env=env)
+            run(['pcmanfm','--set-wallpaper='+str(image),'--wallpaper-mode='+('fit' if cfg.get('fit')=='contain' else 'crop')],env=env)
             return {'desktop':'pcmanfm','image':str(image)}
         raise RuntimeError('No supported desktop session (GNOME or PCManFM)')
     if system=='Windows':

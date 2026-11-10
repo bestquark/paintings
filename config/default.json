@@ -1,11 +1,26 @@
 {
   "version": 1,
   "interval_seconds": 300,
-  "streams": ["landscapes", "renaissance", "baroque", "romanticism", "impressionism", "abstraction", "visionary"],
+  "streams": [
+    "classical"
+  ],
   "seed": "bestquark-paintings-v1",
-  "fit": "contain",
+  "fit": "cover",
   "terminal_opacity": 0.16,
   "web_opacity": 0.16,
-  "adapters": ["desktop"],
-  "cache_limit_mb": 4096
+  "adapters": [
+    "desktop"
+  ],
+  "cache_limit_mb": 4096,
+  "available_streams": [
+    "classical",
+    "landscapes",
+    "renaissance",
+    "baroque",
+    "romanticism",
+    "impressionism",
+    "abstraction",
+    "visionary"
+  ],
+  "preference_revision": 2
 }
