@@ -1,10 +1,10 @@
 # Contributing artwork
 
-Keep the seven short stream names stable. Add existing artwork only, with a source page that identifies the creator and the image's license or usage policy. Do not add generated images, unlicensed contemporary work, photographs of galleries, diagrams, or duplicate scans of the same painting.
+Keep stream names stable. Add existing artwork only, with a source page that identifies the creator and the image's license or usage policy. Do not add generated images, unlicensed work, gallery photographs, diagrams, or duplicate scans.
 
 Each catalog record includes a stable `id`, `title`, `artist`, `date` when known, `image_url`, `original_url`, `source_url`, `source`, `credit`, `license`, `license_url`, original `width` and `height`, decoded `display_width` and `display_height`, `image_sha256`, and `generated: false`. Use HTTPS. Unknown creation dates stay blank; archival upload dates must not be presented as painting dates.
 
-Each stream must retain at least 200 distinct artworks. Thematic overlap between streams is intentional. Landscapes must keep Renaissance landscapes; Visionary must keep the 1970s NASA colonies and existing speculative paintings. Preserve the Thomas Cole and Van Gogh anchors tested in the suite.
+Each stream must retain at least 200 distinct artworks. Thematic overlap between streams is intentional.
 
 Run the offline contract and behavior checks:
 
