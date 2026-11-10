@@ -12,12 +12,15 @@ fn setup() -> (tempfile::TempDir, Paths, Value) {
 }
 #[test]
 fn catalog_contract() {
+    let exclusions: Value =
+        serde_json::from_str(include_str!("../tools/stream-exclusions.json")).unwrap();
     for stream in assets::STREAMS {
         let arts = assets::catalog(stream).unwrap();
-        assert_eq!(arts.len(), 200);
+        assert_eq!(arts.len(), if stream == "classical" { 34 } else { 200 });
         let mut ids = HashSet::new();
         let mut hashes = HashSet::new();
         for a in arts {
+            assert!(exclusions[stream].get(a["id"].as_str().unwrap()).is_none());
             assert!(ids.insert(a["id"].clone().to_string()));
             assert!(hashes.insert(a["image_sha256"].clone().to_string()));
             assert_eq!(a["generated"], false);
@@ -314,7 +317,7 @@ fn standalone_install_and_uninstall_need_no_interpreter() {
     assert!(
         String::from_utf8(run(&installed, &["--version"]))
             .unwrap()
-            .contains("0.3.0")
+            .contains(env!("CARGO_PKG_VERSION"))
     );
     let status: Value = serde_json::from_slice(&run(&installed, &["status"])).unwrap();
     assert_eq!(status["settings"]["streams"], json!(["classical"]));

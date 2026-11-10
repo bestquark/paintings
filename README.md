@@ -1,6 +1,6 @@
 # Paintings
 
-Rotating art for desktops, terminals, and web apps. Built in Rust; no Python required. Eight streams, 200 existing artworks each. No generated images.
+Rotating art for desktops, terminals, and web apps. Built in Rust; no Python required. Eight streams of existing artwork. No generated images.
 
 | Stream | Ten examples |
 | :-- | :-- |

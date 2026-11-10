@@ -137,11 +137,17 @@ fn finalize(stream: &str, target: usize, write: bool, sheets: bool) -> Result<()
     let mut kept: Vec<Value> = vec![];
     let mut seen: Vec<(u64, String)> = vec![];
     let mut dropped = vec![];
-    let exclusions = if Path::new("tools/exclusions.json").exists() {
+    let mut exclusions = if Path::new("tools/exclusions.json").exists() {
         read_json(Path::new("tools/exclusions.json"))?
     } else {
         json!({})
     };
+    if Path::new("tools/stream-exclusions.json").exists() {
+        let scoped = read_json(Path::new("tools/stream-exclusions.json"))?;
+        if let Some(entries) = scoped[stream].as_object() {
+            exclusions.as_object_mut().unwrap().extend(entries.clone());
+        }
+    }
     let detail = regex::Regex::new(
         r"(?i)\b(detail|dettaglio|detalhe|recto and verso|signature|firma|reverse side|postcard|engravings|sketchbook)\b",
     )?;

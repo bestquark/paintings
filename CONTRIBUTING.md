@@ -4,7 +4,11 @@ Keep stream names stable. Add existing artwork only, with a source page that ide
 
 Each catalog record includes a stable `id`, `title`, `artist`, `date` when known, `image_url`, `original_url`, `source_url`, `source`, `credit`, `license`, `license_url`, original `width` and `height`, decoded `display_width` and `display_height`, `image_sha256`, and `generated: false`. Use HTTPS. Unknown creation dates stay blank; archival upload dates must not be presented as painting dates.
 
-Each stream must retain at least 200 distinct artworks. Thematic overlap between streams is intentional.
+The seven broad streams each contain 200 distinct artworks. Classical is a smaller, tightly curated selection; prioritize its visual brief over a count target. Thematic overlap between streams is intentional.
+
+For **classical**, select majestic Greek and Roman palaces, intact temples, colonnades, and flourishing cities in bright or warm, uplifting settings. Architecture should dominate the view. Exclude ruin-dominated landscapes, abandoned sites, disasters, battles, sombre scenes, and figure studies with incidental architecture. Review the actual image, not just its title or artist.
+
+`tools/stream-exclusions.json` keeps rejected works out of a particular stream without excluding them from other styles.
 
 Run the offline contract and behavior checks:
 
@@ -22,7 +26,7 @@ cargo run --release --features catalog-tools --bin paintings-catalog -- finalize
 cargo run --release --features catalog-tools --bin paintings-catalog -- previews
 ```
 
-Verification downloads source images and writes analysis under `.work/`. Inspect the contact sheets and source pages; perceptual matching needs manual review. `tools/exclusions.json` records rejected candidates. `finalize --write` replaces a stream with its first 200 verified entries. `tools/previews.json` selects the ten credited thumbnails per README row.
+Verification downloads source images and writes analysis under `.work/`. Inspect the contact sheets and source pages; perceptual matching needs manual review. `tools/exclusions.json` records rejected candidates. `finalize --write` defaults to 200 verified entries; pass `--target` for a smaller curated collection. `tools/previews.json` selects the ten credited thumbnails per README row.
 
 `paintings gallery --output dist/gallery` builds the static web gallery. macOS source builds need Apple's command-line tools; release binaries already bundle the small native desktop helper. Existing JSON preferences and cached artwork remain compatible when upgrading from 0.2.
 

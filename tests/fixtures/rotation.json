@@ -7,7 +7,7 @@
     "now": 0,
     "offset": 0,
     "stream": "classical",
-    "id": "commons-149515628"
+    "id": "commons-109966323"
   },
   {
     "streams": [
@@ -28,7 +28,7 @@
     "now": 1794282241,
     "offset": 0,
     "stream": "classical",
-    "id": "commons-86431215"
+    "id": "commons-109966323"
   },
   {
     "streams": [
@@ -36,7 +36,7 @@
       "abstraction",
       "classical"
     ],
-    "seed": "unicode-\u03bb",
+    "seed": "unicode-λ",
     "now": 1794282241,
     "offset": 4,
     "stream": "visionary",
