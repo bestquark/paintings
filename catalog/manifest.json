@@ -1,6 +1,6 @@
 {
   "version": "0.3.1",
-  "reviewed_at": "2026-11-10",
+  "reviewed_at": "2026-11-11",
   "stream_count": 8,
   "artwork_policy": "Existing artwork only; no generated imagery",
   "streams": {
@@ -33,16 +33,17 @@
       "sha256": "ccb85ccbb0575dd4113dfdea82d1df6d45dd65220348be14630ec993e9b2ee56"
     },
     "classical": {
-      "entries": 34,
-      "sha256": "8b87e4ed223279eca7991e111c9c1de6672b2c6444824b1b019d54dc9009808b"
+      "entries": 35,
+      "sha256": "9b0e9886584dca31a10b7d6764a5b92cbb4f31c033e35ae41eae53032f16f332"
     }
   },
-  "total_entries": 1434,
-  "distinct_artwork_ids": 1255,
+  "total_entries": 1435,
+  "distinct_artwork_ids": 1256,
   "license_entries": {
     "Public domain": 1311,
     "CC0": 41,
     "NASA media guidelines": 31,
-    "CC BY 4.0": 51
+    "CC BY 4.0": 51,
+    "CC BY-SA 4.0": 1
   }
 }

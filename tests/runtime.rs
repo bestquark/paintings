@@ -16,7 +16,7 @@ fn catalog_contract() {
         serde_json::from_str(include_str!("../tools/stream-exclusions.json")).unwrap();
     for stream in assets::STREAMS {
         let arts = assets::catalog(stream).unwrap();
-        assert_eq!(arts.len(), if stream == "classical" { 34 } else { 200 });
+        assert_eq!(arts.len(), if stream == "classical" { 35 } else { 200 });
         let mut ids = HashSet::new();
         let mut hashes = HashSet::new();
         for a in arts {
