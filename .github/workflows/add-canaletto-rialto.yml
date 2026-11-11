@@ -14,7 +14,7 @@ jobs:
       - name: Add catalog record from Wikimedia Commons metadata
         run: |
           python3 - <<'PY'
-          import json, urllib.parse, urllib.request
+          import json, re, html, urllib.parse, urllib.request
           name = "The Rialto Bridge from the South - Giovanni Antonio Canal, il Canaletto - Wells-Next-The-Sea, The Earl of Leicester and Trustees of the Holkham Estate.jpg"
           q = urllib.parse.urlencode({
               "action": "query", "format": "json", "formatversion": "2",
@@ -29,19 +29,27 @@ jobs:
           meta = info["extmetadata"]
           lic = meta.get("LicenseShortName", {}).get("value", "")
           print("License on Commons:", lic, "| size:", info["width"], "x", info["height"])
-          assert "public domain" in lic.lower() or lic.lower().startswith("pd"), lic
+          plain = lambda k: " ".join(html.unescape(re.sub(r"<[^>]+>", " ", meta.get(k, {}).get("value", ""))).split())
+          for k in ["License", "LicenseShortName", "LicenseUrl", "UsageTerms", "AttributionRequired", "Attribution", "Artist", "Credit", "Copyrighted"]:
+              print(f"{k}: {plain(k)}")
+          if "public domain" in lic.lower() or lic.lower().startswith("pd"):
+              license, license_url, credit = "Public domain", "https://creativecommons.org/publicdomain/mark/1.0/", "Canaletto"
+          else:
+              assert lic in ("CC BY-SA 4.0", "CC BY 4.0"), lic
+              license, license_url = lic, meta["LicenseUrl"]["value"].rstrip("/").replace("http://", "https://")
+              credit = plain("Attribution") or plain("Credit") or plain("Artist")
           thumb = info["thumburl"].replace("https://upload.wikimedia.org/", "https://thumb.wikimedia.org/", 1)
           record = {
               "artist": "Canaletto",
               "categories": [c["title"].removeprefix("Category:") for c in page.get("categories", [])],
-              "credit": "Canaletto",
+              "credit": credit,
               "date": "1727",
               "generated": False,
               "height": info["height"],
               "id": f"commons-{page['pageid']}",
               "image_url": thumb,
-              "license": "Public domain",
-              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "license": license,
+              "license_url": license_url,
               "original_url": info["url"],
               "sha1": info["sha1"],
               "source": "Wikimedia Commons",
