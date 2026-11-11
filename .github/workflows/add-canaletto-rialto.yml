@@ -1,0 +1,71 @@
+name: Add Canaletto Rialto (one-off)
+on:
+  push:
+    branches: [add-canaletto-rialto]
+    paths: [.github/workflows/add-canaletto-rialto.yml]
+permissions:
+  contents: write
+jobs:
+  add:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup toolchain install stable --profile minimal
+      - name: Add catalog record from Wikimedia Commons metadata
+        run: |
+          python3 - <<'PY'
+          import json, urllib.parse, urllib.request
+          name = "The Rialto Bridge from the South - Giovanni Antonio Canal, il Canaletto - Wells-Next-The-Sea, The Earl of Leicester and Trustees of the Holkham Estate.jpg"
+          q = urllib.parse.urlencode({
+              "action": "query", "format": "json", "formatversion": "2",
+              "titles": "File:" + name, "prop": "imageinfo|categories|info",
+              "iiprop": "url|sha1|size|extmetadata", "iiurlwidth": "3840", "cllimit": "max",
+          })
+          req = urllib.request.Request("https://commons.wikimedia.org/w/api.php?" + q,
+              headers={"User-Agent": "bestquark-paintings-catalog/0.3 (https://github.com/bestquark/paintings)"})
+          page = json.load(urllib.request.urlopen(req))["query"]["pages"][0]
+          assert "missing" not in page, page
+          info = page["imageinfo"][0]
+          meta = info["extmetadata"]
+          lic = meta.get("LicenseShortName", {}).get("value", "")
+          print("License on Commons:", lic, "| size:", info["width"], "x", info["height"])
+          assert "public domain" in lic.lower() or lic.lower().startswith("pd"), lic
+          thumb = info["thumburl"].replace("https://upload.wikimedia.org/", "https://thumb.wikimedia.org/", 1)
+          record = {
+              "artist": "Canaletto",
+              "categories": [c["title"].removeprefix("Category:") for c in page.get("categories", [])],
+              "credit": "Canaletto",
+              "date": "1727",
+              "generated": False,
+              "height": info["height"],
+              "id": f"commons-{page['pageid']}",
+              "image_url": thumb,
+              "license": "Public domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "original_url": info["url"],
+              "sha1": info["sha1"],
+              "source": "Wikimedia Commons",
+              "source_category": "Paintings by Giovanni Antonio Canal",
+              "source_url": info["descriptionurl"],
+              "title": "Grand Canal: The Rialto Bridge from the South",
+              "width": info["width"],
+          }
+          path = "catalog/classical.json"
+          data = json.load(open(path))
+          assert all(a["id"] != record["id"] for a in data["artworks"])
+          data["artworks"].append(record)
+          json.dump(data, open(path, "w"), indent=2, sort_keys=True, ensure_ascii=False)
+          print(json.dumps(record, indent=1))
+          PY
+      - name: Verify images and finalize classical
+        run: |
+          cargo +stable run --release --locked --features catalog-tools --bin paintings-catalog -- verify classical
+          cargo +stable run --release --locked --features catalog-tools --bin paintings-catalog -- finalize classical --write --target 35
+          cat .work/classical-excluded.json
+      - name: Commit the verified record
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add catalog/classical.json
+          git commit -m "Add Canaletto's Grand Canal: The Rialto Bridge from the South to classical"
+          git push origin HEAD:add-canaletto-rialto
