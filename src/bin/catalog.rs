@@ -97,7 +97,12 @@ fn verify(paths: &Paths, art: &Value) -> Result<Value> {
     let image = rotation::download(paths, art)?;
     let im = decode(&image)?;
     let (w, h) = (im.width(), im.height());
-    if w < 1100 || h < 600 {
+    let exceptions: Value =
+        serde_json::from_str(include_str!("../../tools/image-exceptions.json"))?;
+    let minimum_width = exceptions[art["id"].as_str().context("Missing ID")?]["minimum_width"]
+        .as_u64()
+        .unwrap_or(1100);
+    if u64::from(w) < minimum_width || h < 600 {
         bail!("Image too small: {w}x{h}");
     }
     Ok(

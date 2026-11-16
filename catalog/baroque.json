@@ -5665,33 +5665,6 @@
       "image_sha256": "20c417913c51e0efad0b10f5687425748506885e6abe4d8215608a3630e66843"
     },
     {
-      "id": "commons-60759558",
-      "title": "Claude Lorrain Marinella",
-      "artist": "Claude Lorrain",
-      "date": "1639",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Claude_Lorrain_Marinella.JPG",
-      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Claude_Lorrain_Marinella.JPG",
-      "source_url": "https://commons.wikimedia.org/wiki/File:Claude_Lorrain_Marinella.JPG",
-      "license": "Public domain",
-      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "credit": "Claude Lorrain",
-      "width": 2986,
-      "height": 2362,
-      "source": "Wikimedia Commons",
-      "source_category": "Paintings by Claude Lorrain",
-      "categories": [
-        "Author died more than 100 years ago public domain images",
-        "Artworks without Wikidata item",
-        "CC-PD-Mark",
-        "Landscape with the Port of Santa Marinella by Claude Lorrain in the Petit Palais"
-      ],
-      "sha1": "8af0398d3af921b37016f0b406fd9419a222830c",
-      "generated": false,
-      "display_width": 2986,
-      "display_height": 2362,
-      "image_sha256": "e50f7598ded9fdb951f1ad8869906c9b5a7c51800b7b9d645d4e85c5e7214d9f"
-    },
-    {
       "id": "commons-43339400",
       "title": "Bebost rivierlandschap met een waterval, een herder met schapen en in de verte enkele huizen",
       "artist": "Jacob van Ruisdael",
@@ -7164,6 +7137,44 @@
       "display_width": 2000,
       "display_height": 2519,
       "image_sha256": "5084d63b1532b43f091c19669be3c54bb53f7ebd0b4440b59f915f754099642e"
+    },
+    {
+      "id": "commons-15494006",
+      "title": "The Rialto Bridge from the South",
+      "artist": "Canaletto",
+      "date": "c. 1735",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Giovanni_Antonio_Canal%2C_il_Canaletto_-_The_Rialto_Bridge_from_the_South_-_WGA03910.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Giovanni_Antonio_Canal%2C_il_Canaletto_-_The_Rialto_Bridge_from_the_South_-_WGA03910.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Antonio_Canal,_il_Canaletto_-_The_Rialto_Bridge_from_the_South_-_WGA03910.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "credit": "Canaletto; reproduction from Web Gallery of Art",
+      "width": 1054,
+      "height": 769,
+      "source": "Wikimedia Commons",
+      "source_category": "Paintings of Venice by Giovanni Antonio Canal",
+      "categories": [
+        "18th-century paintings",
+        "Images from Web Gallery of Art",
+        "PD-old-100-expired",
+        "PD-Art (PD-old-auto-expired)",
+        "Artworks with Wikidata item",
+        "Paintings of Venice by Giovanni Antonio Canal",
+        "CC-PD-Mark",
+        "WGA form: painting",
+        "WGA time period: 1701-1750",
+        "WGA type: landscape",
+        "Paintings of Ponte di Rialto",
+        "Artworks digital representation of 2D work",
+        "WGA School: Italian",
+        "Paintings of bridges by Giovanni Antonio Canal",
+        "Paintings in the Galleria Nazionale di Palazzo Corsini"
+      ],
+      "sha1": "04ad4d7effcd9f41dbe846f749df6c20ec3122ab",
+      "generated": false,
+      "display_width": 1054,
+      "display_height": 769,
+      "image_sha256": "06e11a19ab19fea0ffe41b1c3288e0489abac9c843abe44afd372e45b1a854f7"
     }
   ]
 }

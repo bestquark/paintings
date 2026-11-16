@@ -18,8 +18,8 @@ Ten existing artworks per stream, in left-to-right order. Thumbnails are resized
 ## landscapes
 
 1. [The Course of Empire: The Consummation of Empire](https://commons.wikimedia.org/wiki/File:Cole_Thomas_The_Consummation_The_Course_of_the_Empire_1836.jpg) — Thomas Cole. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Thomas Cole.
-2. [monthly cycle, scene: The Hunters in the Snow (winter)](https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg) — Pieter Bruegel the Elder. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Pieter Brueghel the Elder.
-3. [Landscape with St John the Baptist Preaching](https://commons.wikimedia.org/wiki/File:Joachim_Patinier_-_Landscape_with_Saint_John_the_Baptist_Preaching_(Mus%C3%A9es_Royaux_des_Beaux-Arts,_Brussels).jpg) — Joachim Patinir. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Joachim Patinir.
+2. [The Rialto Bridge from the South](https://commons.wikimedia.org/wiki/File:Giovanni_Antonio_Canal,_il_Canaletto_-_The_Rialto_Bridge_from_the_South_-_WGA03910.jpg) — Canaletto. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Canaletto; reproduction from Web Gallery of Art.
+3. [The Voyage of Life: Youth](https://commons.wikimedia.org/wiki/File:Thomas_Cole_-_The_Ages_of_Life_-_Youth_-_WGA05140.jpg) — Thomas Cole. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Thomas Cole.
 4. [Landschaft mit Sonnenuntergang](https://commons.wikimedia.org/wiki/File:Giorgione_042.jpg) — Giorgione. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Giorgione.
 5. [Landscape with the Offering of Isaac](https://commons.wikimedia.org/wiki/File:Herri_met_de_Bles_-_Landscape_with_the_Offering_of_Isaac_-_Google_Art_Project.jpg) — Herri met de Bles. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Herri met de Bles.
 6. [Landscape with Apollo and the Muses](https://commons.wikimedia.org/wiki/File:Claude_Lorrain_(Claude_Gell%C3%A9e)_-_Landscape_with_Apollo_and_the_Muses_-_Google_Art_Project.jpg) — Claude Lorrain. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Claude Lorrain.
@@ -52,7 +52,7 @@ Ten existing artworks per stream, in left-to-right order. Thumbnails are resized
 7. [The Birth of Venus](https://commons.wikimedia.org/wiki/File:Nicolas_Poussin,_French_-_The_Birth_of_Venus_-_Google_Art_Project.jpg) — Nicolas Poussin. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Nicolas Poussin.
 8. [Landscape with Apollo and the Muses](https://commons.wikimedia.org/wiki/File:Claude_Lorrain_(Claude_Gell%C3%A9e)_-_Landscape_with_Apollo_and_the_Muses_-_Google_Art_Project.jpg) — Claude Lorrain. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Claude Lorrain.
 9. [Vista de Naarden](https://commons.wikimedia.org/wiki/File:Jacob_Isaacksz._van_Ruisdael_-_View_of_Naarden_-_Google_Art_Project.jpg) — Jacob van Ruisdael. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Jacob van Ruisdael.
-10. [The Banquet of Cleopatra](https://commons.wikimedia.org/wiki/File:Giambattista_Tiepolo_-_The_Banquet_of_Cleopatra_-_Google_Art_Project.jpg) — Giovanni Battista Tiepolo. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Giovanni Battista Tiepolo.
+10. [The Rialto Bridge from the South](https://commons.wikimedia.org/wiki/File:Giovanni_Antonio_Canal,_il_Canaletto_-_The_Rialto_Bridge_from_the_South_-_WGA03910.jpg) — Canaletto. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/). Credit: Canaletto; reproduction from Web Gallery of Art.
 
 ## romanticism
 

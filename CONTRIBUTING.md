@@ -4,11 +4,11 @@ Keep stream names stable. Add existing artwork only, with a source page that ide
 
 Each catalog record includes a stable `id`, `title`, `artist`, `date` when known, `image_url`, `original_url`, `source_url`, `source`, `credit`, `license`, `license_url`, original `width` and `height`, decoded `display_width` and `display_height`, `image_sha256`, and `generated: false`. Use HTTPS. Unknown creation dates stay blank; archival upload dates must not be presented as painting dates.
 
-The seven broad streams each contain 200 distinct artworks. Classical is a smaller, tightly curated selection; prioritize its visual brief over a count target. Thematic overlap between streams is intentional.
+The seven broad streams each contain at least 200 distinct artworks. Classical is a smaller, tightly curated selection; prioritize its visual brief over a count target. Thematic overlap between streams is intentional.
 
 For **classical**, select majestic Greek and Roman palaces, intact temples, colonnades, and flourishing cities in bright or warm, uplifting settings. Architecture should dominate the view. Exclude ruin-dominated landscapes, abandoned sites, disasters, battles, sombre scenes, and figure studies with incidental architecture. Review the actual image, not just its title or artist.
 
-`tools/stream-exclusions.json` keeps rejected works out of a particular stream without excluding them from other styles.
+`tools/stream-exclusions.json` keeps rejected works out of a particular stream without excluding them from other styles. Images should be at least 1100 × 600 pixels; `tools/image-exceptions.json` records specific lower-resolution works retained for their content. Do not upscale originals to satisfy verification.
 
 Run the offline contract and behavior checks:
 

@@ -1,6 +1,6 @@
 {
-  "version": "0.3.1",
-  "reviewed_at": "2026-11-10",
+  "version": "0.3.2",
+  "reviewed_at": "2026-11-16",
   "stream_count": 8,
   "artwork_policy": "Existing artwork only; no generated imagery",
   "streams": {
@@ -10,11 +10,11 @@
     },
     "baroque": {
       "entries": 200,
-      "sha256": "a21f06e78b42288f68e2dc1e8664cf75cdca74143ff9d1f48dc3bbd02302aa44"
+      "sha256": "06b4e960f0c1a4cc9db51242458671063d6ccf08383bd807cd8aa03e4dba1e1e"
     },
     "romanticism": {
       "entries": 200,
-      "sha256": "2c306b9aae9b5e9469f89adbf12dd6c5f9266a9c46cca620bc720a333db3ffd2"
+      "sha256": "ce0225e900993d8e9f6c61bc68d2ef544d4d71e987ff20f1a6ad1d36f065bd6c"
     },
     "impressionism": {
       "entries": 200,
@@ -29,18 +29,18 @@
       "sha256": "b3fc8611cd2425e5efc5177cc9d1c22bb2a88c475448574d1009b5342afde0a1"
     },
     "landscapes": {
-      "entries": 200,
-      "sha256": "ccb85ccbb0575dd4113dfdea82d1df6d45dd65220348be14630ec993e9b2ee56"
+      "entries": 201,
+      "sha256": "46dffa2eb8e59508ca589261383542ef76be1f881ba1bbc1e8c940c34854c8d5"
     },
     "classical": {
       "entries": 34,
       "sha256": "8b87e4ed223279eca7991e111c9c1de6672b2c6444824b1b019d54dc9009808b"
     }
   },
-  "total_entries": 1434,
+  "total_entries": 1435,
   "distinct_artwork_ids": 1255,
   "license_entries": {
-    "Public domain": 1311,
+    "Public domain": 1312,
     "CC0": 41,
     "NASA media guidelines": 31,
     "CC BY 4.0": 51

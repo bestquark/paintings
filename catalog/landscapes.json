@@ -5606,7 +5606,7 @@
     },
     {
       "id": "commons-15883514",
-      "title": "The Ages of Life: Youth",
+      "title": "The Voyage of Life: Youth",
       "artist": "Thomas Cole",
       "date": "1842",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Thomas_Cole_-_The_Ages_of_Life_-_Youth_-_WGA05140.jpg/3840px-Thomas_Cole_-_The_Ages_of_Life_-_Youth_-_WGA05140.jpg",
@@ -5644,7 +5644,8 @@
       "generated": false,
       "display_width": 3840,
       "display_height": 2628,
-      "image_sha256": "1160fd69f420fa94bc2ef284aa5a80080a0837a07c80b24092cedad54cbcca24"
+      "image_sha256": "1160fd69f420fa94bc2ef284aa5a80080a0837a07c80b24092cedad54cbcca24",
+      "museum_url": "https://www.nga.gov/artworks/52451-voyage-life-youth"
     },
     {
       "id": "commons-33497224",
@@ -7324,6 +7325,44 @@
       "display_width": 2000,
       "display_height": 1390,
       "image_sha256": "d743a2e86e85362bfddff864d4e0fa307a20748d72858f34e49040410e8cf40f"
+    },
+    {
+      "id": "commons-15494006",
+      "title": "The Rialto Bridge from the South",
+      "artist": "Canaletto",
+      "date": "c. 1735",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Giovanni_Antonio_Canal%2C_il_Canaletto_-_The_Rialto_Bridge_from_the_South_-_WGA03910.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Giovanni_Antonio_Canal%2C_il_Canaletto_-_The_Rialto_Bridge_from_the_South_-_WGA03910.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Antonio_Canal,_il_Canaletto_-_The_Rialto_Bridge_from_the_South_-_WGA03910.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "credit": "Canaletto; reproduction from Web Gallery of Art",
+      "width": 1054,
+      "height": 769,
+      "source": "Wikimedia Commons",
+      "source_category": "Paintings of Venice by Giovanni Antonio Canal",
+      "categories": [
+        "18th-century paintings",
+        "Images from Web Gallery of Art",
+        "PD-old-100-expired",
+        "PD-Art (PD-old-auto-expired)",
+        "Artworks with Wikidata item",
+        "Paintings of Venice by Giovanni Antonio Canal",
+        "CC-PD-Mark",
+        "WGA form: painting",
+        "WGA time period: 1701-1750",
+        "WGA type: landscape",
+        "Paintings of Ponte di Rialto",
+        "Artworks digital representation of 2D work",
+        "WGA School: Italian",
+        "Paintings of bridges by Giovanni Antonio Canal",
+        "Paintings in the Galleria Nazionale di Palazzo Corsini"
+      ],
+      "sha1": "04ad4d7effcd9f41dbe846f749df6c20ec3122ab",
+      "generated": false,
+      "display_width": 1054,
+      "display_height": 769,
+      "image_sha256": "06e11a19ab19fea0ffe41b1c3288e0489abac9c843abe44afd372e45b1a854f7"
     }
   ]
 }

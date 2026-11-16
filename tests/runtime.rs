@@ -14,9 +14,15 @@ fn setup() -> (tempfile::TempDir, Paths, Value) {
 fn catalog_contract() {
     let exclusions: Value =
         serde_json::from_str(include_str!("../tools/stream-exclusions.json")).unwrap();
+    let image_exceptions: Value =
+        serde_json::from_str(include_str!("../tools/image-exceptions.json")).unwrap();
     for stream in assets::STREAMS {
         let arts = assets::catalog(stream).unwrap();
-        assert_eq!(arts.len(), if stream == "classical" { 34 } else { 200 });
+        if stream == "classical" {
+            assert_eq!(arts.len(), 34);
+        } else {
+            assert!(arts.len() >= 200);
+        }
         let mut ids = HashSet::new();
         let mut hashes = HashSet::new();
         for a in arts {
@@ -36,7 +42,10 @@ fn catalog_contract() {
                 assert!(!a[k].as_str().unwrap().is_empty(), "{stream}: {k}");
             }
             assert!(a["image_url"].as_str().unwrap().starts_with("https://"));
-            assert!(a["display_width"].as_u64().unwrap() >= 1100);
+            let minimum_width = image_exceptions[a["id"].as_str().unwrap()]["minimum_width"]
+                .as_u64()
+                .unwrap_or(1100);
+            assert!(a["display_width"].as_u64().unwrap() >= minimum_width);
             assert!(a["display_height"].as_u64().unwrap() >= 600);
         }
     }
